@@ -2,6 +2,7 @@ import { Mail, Linkedin } from 'lucide-react';
 import Navigation from '@/components/Navigation';
 import { Button } from '@/components/ui/button';
 import heroImage from '@/assets/lisa-hero.jpg';
+import Footer from '@/components/Footer';
 
 const About = () => {
   const skills = [
@@ -94,7 +95,7 @@ const About = () => {
               <div className="absolute inset-0 bg-gradient-to-tr from-portfolio-primary/20 to-portfolio-accent/20 rounded-2xl blur-3xl"></div>
               <img 
                 src={heroImage} 
-                alt="Lisa Nevold"
+                alt="Lisa Hanevold"
                 className="relative rounded-2xl shadow-2xl w-full max-w-md mx-auto"
               />
             </div>
@@ -166,6 +167,8 @@ const About = () => {
           </div>
         </div>
       </div>
+      
+      <Footer />
     </div>
   );
 };

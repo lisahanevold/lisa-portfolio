@@ -3,6 +3,7 @@ import { ArrowLeft, Calendar, Clock, User, Target } from 'lucide-react';
 import Navigation from '@/components/Navigation';
 import { Button } from '@/components/ui/button';
 import { projects } from '@/data/projects';
+import Footer from '@/components/Footer';
 
 const ProjectDetail = () => {
   const { id } = useParams<{ id: string }>();
@@ -28,6 +29,8 @@ const ProjectDetail = () => {
             </Button>
           </div>
         </div>
+        
+        <Footer />
       </div>
     );
   }
@@ -186,6 +189,8 @@ const ProjectDetail = () => {
           </div>
         </div>
       </div>
+      
+      <Footer />
     </div>
   );
 };

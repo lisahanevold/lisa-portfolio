@@ -30,7 +30,7 @@ const Navigation = () => {
       <div className="container">
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="text-xl font-playfair font-semibold text-portfolio-primary">
-            Lisa Nevold
+            Lisa Hanevold
           </Link>
 
           {/* Desktop Navigation */}

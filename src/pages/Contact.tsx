@@ -6,6 +6,7 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Card } from '@/components/ui/card';
 import { useToast } from '@/hooks/use-toast';
+import Footer from '@/components/Footer';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -56,8 +57,8 @@ const Contact = () => {
       icon: Linkedin,
       title: 'LinkedIn',
       description: 'Connect on LinkedIn',
-      contact: 'linkedin.com/in/lisanevold',
-      action: 'https://linkedin.com/in/lisanevold'
+      contact: 'linkedin.com/in/lisahanevold',
+      action: 'https://linkedin.com/in/lisahanevold'
     },
     {
       icon: MessageCircle,
@@ -242,6 +243,8 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      
+      <Footer />
     </div>
   );
 };

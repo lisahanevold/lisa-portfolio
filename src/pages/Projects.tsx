@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Navigation from '@/components/Navigation';
 import ProjectCard from '@/components/ProjectCard';
 import { projects } from '@/data/projects';
+import Footer from '@/components/Footer';
 
 const Projects = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
@@ -73,6 +74,8 @@ const Projects = () => {
           )}
         </div>
       </div>
+      
+      <Footer />
     </div>
   );
 };

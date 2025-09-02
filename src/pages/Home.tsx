@@ -6,6 +6,7 @@ import ProjectCard from '@/components/ProjectCard';
 import Navigation from '@/components/Navigation';
 import { projects } from '@/data/projects';
 import heroImage from '@/assets/lisa-hero.jpg';
+import Footer from '@/components/Footer';
 
 const Home = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -75,7 +76,7 @@ const Home = () => {
                 <div className="absolute inset-0 bg-gradient-to-tr from-portfolio-primary/20 to-portfolio-accent/20 rounded-2xl blur-3xl"></div>
                 <img 
                   src={heroImage} 
-                  alt="Lisa Nevold - UX Designer"
+                  alt="Lisa Hanevold - UX Designer"
                   className="relative rounded-2xl shadow-2xl w-full max-w-md mx-auto"
                 />
               </div>
@@ -143,6 +144,8 @@ const Home = () => {
           </div>
         </div>
       </section>
+      
+      <Footer />
     </div>
   );
 };
