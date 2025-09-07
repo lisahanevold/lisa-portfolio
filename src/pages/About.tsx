@@ -77,7 +77,7 @@ const About = () => {
               
               <div className="flex gap-4 pt-4">
                 <Button asChild>
-                  <a href="mailto:lisa.hanevold@example.com" className="flex items-center">
+                  <a href="mailto:lisa.hanevold@gmail.com" className="flex items-center">
                     <Mail className="mr-2 w-4 h-4" />
                     Get In Touch
                   </a>
@@ -162,8 +162,8 @@ const About = () => {
                 <div className="space-y-4">
                   <div className="flex items-center">
                     <Mail className="w-5 h-5 text-portfolio-accent mr-3" />
-                    <a href="mailto:lisa.hanevold@example.com" className="text-muted-foreground hover:text-portfolio-accent transition-colors">
-                      lisa.hanevold@example.com
+                    <a href="mailto:lisa.hanevold@gmail.com" className="text-muted-foreground hover:text-portfolio-accent transition-colors">
+                      lisa.hanevold@gmail.com
                     </a>
                   </div>
                   <div className="flex items-center">
@@ -221,7 +221,7 @@ const About = () => {
               I'd love to hear about your project.
             </p>
             <Button asChild size="lg">
-              <a href="mailto:lisa.hanevold@example.com">
+              <a href="mailto:lisa.hanevold@gmail.com">
                 Start a Conversation
               </a>
             </Button>
