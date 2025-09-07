@@ -20,8 +20,12 @@ const Navigation = () => {
     { name: 'Home', path: '/' },
     { name: 'Projects', path: '/projects' },
     { name: 'About', path: '/about' },
-    { name: 'Contact', path: '/contact' },
   ];
+
+  const handleNavClick = () => {
+    setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 100);
+    setIsOpen(false);
+  };
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -39,6 +43,7 @@ const Navigation = () => {
               <Link
                 key={item.name}
                 to={item.path}
+                onClick={handleNavClick}
                 className={`text-sm font-medium transition-colors hover:text-portfolio-accent ${
                   location.pathname === item.path
                     ? 'text-portfolio-primary border-b-2 border-portfolio-accent'
@@ -74,7 +79,7 @@ const Navigation = () => {
                       ? 'bg-portfolio-light text-portfolio-primary'
                       : 'text-portfolio-neutral hover:bg-muted hover:text-portfolio-accent'
                   }`}
-                  onClick={() => setIsOpen(false)}
+                  onClick={handleNavClick}
                 >
                   {item.name}
                 </Link>

@@ -112,7 +112,7 @@ const ProjectDetail = () => {
             {/* Content Sections */}
             {project.challenges && (
               <div className="space-y-6">
-                <h2 className="text-3xl font-playfair font-bold text-portfolio-primary text-center">
+                <h2 className="text-3xl font-playfair font-bold text-portfolio-primary">
                   Challenges
                 </h2>
                 <div className="prose prose-lg max-w-none text-muted-foreground">
@@ -127,7 +127,7 @@ const ProjectDetail = () => {
 
             {project.solutions && (
               <div className="space-y-6">
-                <h2 className="text-3xl font-playfair font-bold text-portfolio-primary text-center">
+                <h2 className="text-3xl font-playfair font-bold text-portfolio-primary">
                   Solutions & Approach
                 </h2>
                 <div className="prose prose-lg max-w-none text-muted-foreground">
@@ -142,7 +142,7 @@ const ProjectDetail = () => {
 
             {project.outcomes && (
               <div className="space-y-6">
-                <h2 className="text-3xl font-playfair font-bold text-portfolio-primary text-center">
+                <h2 className="text-3xl font-playfair font-bold text-portfolio-primary">
                   Outcomes & Impact
                 </h2>
                 <div className="prose prose-lg max-w-none text-muted-foreground">
