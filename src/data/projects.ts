@@ -25,12 +25,12 @@ export interface Project {
   additionalImages?: string[];
 }
 
-import teambirthImg from '@/assets/project-teambirth.jpg';
-import maternityImg from '@/assets/digiBirth/system_en.png';
+import teambirthImg from '@/assets/master/midwife_workshop_pic.png';
+import maternityImg from '@/assets/digiBirth/digiBirth_lesspink.jpg';
 import laerdalImg from '@/assets//d8/Books_edited.png';
 import circleKImg from '@/assets/circleK/Front image.png';
 import studywellImg from '@/assets/project-studywell.jpg';
-import krakaImg from '@/assets/project-kraka.jpg';
+import krakaImg from '@/assets/kråka/Kråka_mPc.jpg';
 
 export const projects: Project[] = [
   {
