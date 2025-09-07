@@ -4,6 +4,7 @@ import Navigation from '@/components/Navigation';
 import { Button } from '@/components/ui/button';
 import { projects } from '@/data/projects';
 import Footer from '@/components/Footer';
+import ContentRenderer from '@/components/ContentRenderer';
 
 const ProjectDetail = () => {
   const { id } = useParams<{ id: string }>();
@@ -110,48 +111,55 @@ const ProjectDetail = () => {
             </div>
 
             {/* Content Sections */}
-            {project.challenges && (
-              <div className="space-y-6">
-                <h2 className="text-3xl font-playfair font-bold text-portfolio-primary">
-                  Challenges
-                </h2>
-                <div className="prose prose-lg max-w-none text-muted-foreground">
-                  {project.challenges.map((challenge, index) => (
-                    <p key={index} className="mb-4 leading-relaxed">
-                      {challenge}
-                    </p>
-                  ))}
-                </div>
-              </div>
-            )}
+            {project.content ? (
+              <ContentRenderer content={project.content} />
+            ) : (
+              // Fallback for old project structure
+              <div className="space-y-12">
+                {project.challenges && (
+                  <div className="space-y-6">
+                    <h2 className="text-3xl font-playfair font-bold text-portfolio-primary">
+                      Challenges
+                    </h2>
+                    <div className="prose prose-lg max-w-none text-muted-foreground">
+                      {project.challenges.map((challenge, index) => (
+                        <p key={index} className="mb-4 leading-relaxed">
+                          {challenge}
+                        </p>
+                      ))}
+                    </div>
+                  </div>
+                )}
 
-            {project.solutions && (
-              <div className="space-y-6">
-                <h2 className="text-3xl font-playfair font-bold text-portfolio-primary">
-                  Solutions & Approach
-                </h2>
-                <div className="prose prose-lg max-w-none text-muted-foreground">
-                  {project.solutions.map((solution, index) => (
-                    <p key={index} className="mb-4 leading-relaxed">
-                      {solution}
-                    </p>
-                  ))}
-                </div>
-              </div>
-            )}
+                {project.solutions && (
+                  <div className="space-y-6">
+                    <h2 className="text-3xl font-playfair font-bold text-portfolio-primary">
+                      Solutions & Approach
+                    </h2>
+                    <div className="prose prose-lg max-w-none text-muted-foreground">
+                      {project.solutions.map((solution, index) => (
+                        <p key={index} className="mb-4 leading-relaxed">
+                          {solution}
+                        </p>
+                      ))}
+                    </div>
+                  </div>
+                )}
 
-            {project.outcomes && (
-              <div className="space-y-6">
-                <h2 className="text-3xl font-playfair font-bold text-portfolio-primary">
-                  Outcomes & Impact
-                </h2>
-                <div className="prose prose-lg max-w-none text-muted-foreground">
-                  {project.outcomes.map((outcome, index) => (
-                    <p key={index} className="mb-4 leading-relaxed">
-                      {outcome}
-                    </p>
-                  ))}
-                </div>
+                {project.outcomes && (
+                  <div className="space-y-6">
+                    <h2 className="text-3xl font-playfair font-bold text-portfolio-primary">
+                      Outcomes & Impact
+                    </h2>
+                    <div className="prose prose-lg max-w-none text-muted-foreground">
+                      {project.outcomes.map((outcome, index) => (
+                        <p key={index} className="mb-4 leading-relaxed">
+                          {outcome}
+                        </p>
+                      ))}
+                    </div>
+                  </div>
+                )}
               </div>
             )}
           </div>

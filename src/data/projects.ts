@@ -1,3 +1,11 @@
+export interface ContentBlock {
+  type: 'text' | 'image' | 'header';
+  content: string;
+  image?: string;
+  alt?: string;
+  level?: 1 | 2 | 3; // For headers
+}
+
 export interface Project {
   id: string;
   title: string;
@@ -9,9 +17,12 @@ export interface Project {
   client?: string;
   duration?: string;
   role: string;
+  content?: ContentBlock[];
+  // Legacy properties for backward compatibility
   challenges?: string[];
   solutions?: string[];
   outcomes?: string[];
+  additionalImages?: string[];
 }
 
 import teambirthImg from '@/assets/project-teambirth.jpg';
@@ -33,23 +44,82 @@ export const projects: Project[] = [
     client: 'Master Thesis',
     duration: '6 months',
     role: 'UX Researcher & Service Designer',
-    challenges: [
-      'Cultural sensitivity in healthcare communication',
-      'Language barriers and local customs',
-      'Different healthcare infrastructure',
-      'Varying literacy levels among users'
-    ],
-    solutions: [
-      'Extensive ethnographic research in Nepal',
-      'Co-design workshops with local healthcare workers',
-      'Cultural adaptation framework development',
-      'Localized communication strategies'
-    ],
-    outcomes: [
-      'Successfully adapted product for Nepali context',
-      'Developed cultural adaptation methodology',
-      'Improved maternal care communication protocols',
-      'Recommendations for scalable implementation'
+    content: [
+      {
+        type: 'header',
+        content: 'Challenges',
+        level: 2
+      },
+      {
+        type: 'text',
+        content: 'Cultural sensitivity in healthcare communication'
+      },
+      {
+        type: 'text',
+        content: 'Language barriers and local customs'
+      },
+      {
+        type: 'text',
+        content: 'Different healthcare infrastructure'
+      },
+      {
+        type: 'text',
+        content: 'Varying literacy levels among users'
+      },
+      {
+        type: 'header',
+        content: 'Solutions & Approach',
+        level: 2
+      },
+      {
+        type: 'text',
+        content: 'Extensive ethnographic research in Nepal'
+      },
+      {
+        type: 'text',
+        content: 'Co-design workshops with local healthcare workers'
+      },
+      {
+        type: 'image',
+        content: '',
+        image: maternityImg,
+        alt: 'Co-design workshop session'
+      },
+      {
+        type: 'text',
+        content: 'Cultural adaptation framework development'
+      },
+      {
+        type: 'text',
+        content: 'Localized communication strategies'
+      },
+      {
+        type: 'header',
+        content: 'Outcomes & Impact',
+        level: 2
+      },
+      {
+        type: 'text',
+        content: 'Successfully adapted product for Nepali context'
+      },
+      {
+        type: 'text',
+        content: 'Developed cultural adaptation methodology'
+      },
+      {
+        type: 'image',
+        content: '',
+        image: laerdalImg,
+        alt: 'Implementation results'
+      },
+      {
+        type: 'text',
+        content: 'Improved maternal care communication protocols'
+      },
+      {
+        type: 'text',
+        content: 'Recommendations for scalable implementation'
+      }
     ]
   },
   {
@@ -117,6 +187,11 @@ export const projects: Project[] = [
     description: 'An explorative UX project for Circle K on how they should move forward with their app development',
     longDescription: 'During my summer internship with Circle K, I led a comprehensive UX research project to determine the strategic direction for their mobile app development. This involved user research, competitive analysis, and prototype development to guide future app initiatives.',
     image: circleKImg,
+    additionalImages: [
+      circleKImg,
+      studywellImg,
+      krakaImg
+    ],
     category: 'UX Design',
     year: '2022',
     client: 'Circle K',
