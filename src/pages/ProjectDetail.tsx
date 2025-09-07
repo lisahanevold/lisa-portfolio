@@ -66,112 +66,94 @@ const ProjectDetail = () => {
         </div>
 
         {/* Content */}
-        <div className="container">
-          <div className="grid lg:grid-cols-3 gap-12 mb-16">
-            {/* Main Content */}
-            <div className="lg:col-span-2 space-y-8">
-              <div>
-                <div className="flex items-center gap-2 mb-4">
-                  <span className="text-sm font-medium text-portfolio-accent uppercase tracking-wide">
-                    {project.category}
-                  </span>
-                  <span className="text-muted-foreground">•</span>
-                  <span className="text-sm text-muted-foreground">{project.year}</span>
-                </div>
-                <h1 className="text-4xl lg:text-5xl font-playfair font-bold text-portfolio-primary mb-6">
-                  {project.title}
-                </h1>
-                <p className="text-xl text-muted-foreground leading-relaxed">
-                  {project.longDescription}
-                </p>
+        <div className="container max-w-4xl">
+          <div className="space-y-12 mb-16">
+            {/* Project Header */}
+            <div className="text-center space-y-6">
+              <div className="flex items-center justify-center gap-2 mb-4">
+                <span className="text-sm font-medium text-portfolio-accent uppercase tracking-wide">
+                  {project.category}
+                </span>
+                <span className="text-muted-foreground">•</span>
+                <span className="text-sm text-muted-foreground">{project.year}</span>
               </div>
-
-              {project.challenges && (
-                <div className="bg-card rounded-2xl p-8 shadow-md">
-                  <h3 className="text-2xl font-playfair font-semibold text-portfolio-primary mb-4 flex items-center">
-                    <Target className="mr-2 w-5 h-5 text-portfolio-accent" />
-                    Challenges
-                  </h3>
-                  <ul className="space-y-3">
-                    {project.challenges.map((challenge, index) => (
-                      <li key={index} className="flex items-start">
-                        <span className="w-2 h-2 bg-portfolio-accent rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                        <span className="text-muted-foreground">{challenge}</span>
-                      </li>
-                    ))}
-                  </ul>
+              <h1 className="text-4xl lg:text-5xl font-playfair font-bold text-portfolio-primary">
+                {project.title}
+              </h1>
+              <p className="text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
+                {project.longDescription}
+              </p>
+              
+              {/* Project Details - Integrated */}
+              <div className="flex flex-wrap justify-center items-center gap-6 pt-6 border-t border-border/50">
+                <div className="flex items-center text-sm">
+                  <User className="w-4 h-4 text-portfolio-accent mr-2" />
+                  <span className="text-muted-foreground font-medium">Role:</span>
+                  <span className="ml-2 text-portfolio-primary">{project.role}</span>
                 </div>
-              )}
-
-              {project.solutions && (
-                <div className="bg-card rounded-2xl p-8 shadow-md">
-                  <h3 className="text-2xl font-playfair font-semibold text-portfolio-primary mb-4">
-                    Solutions & Approach
-                  </h3>
-                  <ul className="space-y-3">
-                    {project.solutions.map((solution, index) => (
-                      <li key={index} className="flex items-start">
-                        <span className="w-2 h-2 bg-portfolio-accent rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                        <span className="text-muted-foreground">{solution}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
-
-              {project.outcomes && (
-                <div className="bg-card rounded-2xl p-8 shadow-md">
-                  <h3 className="text-2xl font-playfair font-semibold text-portfolio-primary mb-4">
-                    Outcomes & Impact
-                  </h3>
-                  <ul className="space-y-3">
-                    {project.outcomes.map((outcome, index) => (
-                      <li key={index} className="flex items-start">
-                        <span className="w-2 h-2 bg-portfolio-accent rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                        <span className="text-muted-foreground">{outcome}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
-            </div>
-
-            {/* Sidebar */}
-            <div className="space-y-6">
-              <div className="bg-card rounded-2xl p-6 shadow-md sticky top-24">
-                <h3 className="text-xl font-playfair font-semibold text-portfolio-primary mb-4">
-                  Project Details
-                </h3>
-                <div className="space-y-4">
-                  <div className="flex items-center">
-                    <User className="w-4 h-4 text-portfolio-accent mr-2" />
-                    <span className="text-sm text-muted-foreground font-medium">Role:</span>
-                    <span className="text-sm ml-2">{project.role}</span>
+                
+                {project.duration && (
+                  <div className="flex items-center text-sm">
+                    <Clock className="w-4 h-4 text-portfolio-accent mr-2" />
+                    <span className="text-muted-foreground font-medium">Duration:</span>
+                    <span className="ml-2 text-portfolio-primary">{project.duration}</span>
                   </div>
-                  
-                  <div className="flex items-center">
-                    <Calendar className="w-4 h-4 text-portfolio-accent mr-2" />
-                    <span className="text-sm text-muted-foreground font-medium">Year:</span>
-                    <span className="text-sm ml-2">{project.year}</span>
+                )}
+                
+                {project.client && (
+                  <div className="flex items-center text-sm">
+                    <span className="text-muted-foreground font-medium">Client:</span>
+                    <span className="ml-2 text-portfolio-primary">{project.client}</span>
                   </div>
-                  
-                  {project.duration && (
-                    <div className="flex items-center">
-                      <Clock className="w-4 h-4 text-portfolio-accent mr-2" />
-                      <span className="text-sm text-muted-foreground font-medium">Duration:</span>
-                      <span className="text-sm ml-2">{project.duration}</span>
-                    </div>
-                  )}
-                  
-                  {project.client && (
-                    <div className="flex items-start">
-                      <span className="text-sm text-muted-foreground font-medium mt-1">Client:</span>
-                      <span className="text-sm ml-2 mt-1">{project.client}</span>
-                    </div>
-                  )}
-                </div>
+                )}
               </div>
             </div>
+
+            {/* Content Sections */}
+            {project.challenges && (
+              <div className="space-y-6">
+                <h2 className="text-3xl font-playfair font-bold text-portfolio-primary text-center">
+                  Challenges
+                </h2>
+                <div className="prose prose-lg max-w-none text-muted-foreground">
+                  {project.challenges.map((challenge, index) => (
+                    <p key={index} className="mb-4 leading-relaxed">
+                      {challenge}
+                    </p>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {project.solutions && (
+              <div className="space-y-6">
+                <h2 className="text-3xl font-playfair font-bold text-portfolio-primary text-center">
+                  Solutions & Approach
+                </h2>
+                <div className="prose prose-lg max-w-none text-muted-foreground">
+                  {project.solutions.map((solution, index) => (
+                    <p key={index} className="mb-4 leading-relaxed">
+                      {solution}
+                    </p>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {project.outcomes && (
+              <div className="space-y-6">
+                <h2 className="text-3xl font-playfair font-bold text-portfolio-primary text-center">
+                  Outcomes & Impact
+                </h2>
+                <div className="prose prose-lg max-w-none text-muted-foreground">
+                  {project.outcomes.map((outcome, index) => (
+                    <p key={index} className="mb-4 leading-relaxed">
+                      {outcome}
+                    </p>
+                  ))}
+                </div>
+              </div>
+            )}
           </div>
 
           {/* Next Project */}
