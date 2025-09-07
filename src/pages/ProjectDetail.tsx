@@ -55,6 +55,49 @@ const ProjectDetail = () => {
           </Button>
         </div>
 
+        {/* Project Header */}
+        <div className="container max-w-4xl mb-12">
+          <div className="text-center space-y-6">
+            <div className="flex items-center justify-center gap-2 mb-4">
+              <span className="text-sm font-medium text-portfolio-accent uppercase tracking-wide">
+                {project.category}
+              </span>
+              <span className="text-muted-foreground">•</span>
+              <span className="text-sm text-muted-foreground">{project.year}</span>
+            </div>
+            <h1 className="text-4xl lg:text-5xl font-playfair font-bold text-portfolio-primary">
+              {project.title}
+            </h1>
+            <p className="text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
+              {project.longDescription}
+            </p>
+            
+            {/* Project Details - Integrated */}
+            <div className="flex flex-wrap justify-center items-center gap-6 pt-6 border-t border-border/50">
+              <div className="flex items-center text-sm">
+                <User className="w-4 h-4 text-portfolio-accent mr-2" />
+                <span className="text-muted-foreground font-medium">Role:</span>
+                <span className="ml-2 text-portfolio-primary">{project.role}</span>
+              </div>
+              
+              {project.duration && (
+                <div className="flex items-center text-sm">
+                  <Clock className="w-4 h-4 text-portfolio-accent mr-2" />
+                  <span className="text-muted-foreground font-medium">Duration:</span>
+                  <span className="ml-2 text-portfolio-primary">{project.duration}</span>
+                </div>
+              )}
+              
+              {project.client && (
+                <div className="flex items-center text-sm">
+                  <span className="text-muted-foreground font-medium">Client:</span>
+                  <span className="ml-2 text-portfolio-primary">{project.client}</span>
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+
         {/* Hero Image */}
         <div className="container mb-12">
           <div className="aspect-[16/9] rounded-2xl overflow-hidden shadow-2xl">
@@ -69,46 +112,6 @@ const ProjectDetail = () => {
         {/* Content */}
         <div className="container max-w-4xl">
           <div className="space-y-12 mb-16">
-            {/* Project Header */}
-            <div className="text-center space-y-6">
-              <div className="flex items-center justify-center gap-2 mb-4">
-                <span className="text-sm font-medium text-portfolio-accent uppercase tracking-wide">
-                  {project.category}
-                </span>
-                <span className="text-muted-foreground">•</span>
-                <span className="text-sm text-muted-foreground">{project.year}</span>
-              </div>
-              <h1 className="text-4xl lg:text-5xl font-playfair font-bold text-portfolio-primary">
-                {project.title}
-              </h1>
-              <p className="text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-                {project.longDescription}
-              </p>
-              
-              {/* Project Details - Integrated */}
-              <div className="flex flex-wrap justify-center items-center gap-6 pt-6 border-t border-border/50">
-                <div className="flex items-center text-sm">
-                  <User className="w-4 h-4 text-portfolio-accent mr-2" />
-                  <span className="text-muted-foreground font-medium">Role:</span>
-                  <span className="ml-2 text-portfolio-primary">{project.role}</span>
-                </div>
-                
-                {project.duration && (
-                  <div className="flex items-center text-sm">
-                    <Clock className="w-4 h-4 text-portfolio-accent mr-2" />
-                    <span className="text-muted-foreground font-medium">Duration:</span>
-                    <span className="ml-2 text-portfolio-primary">{project.duration}</span>
-                  </div>
-                )}
-                
-                {project.client && (
-                  <div className="flex items-center text-sm">
-                    <span className="text-muted-foreground font-medium">Client:</span>
-                    <span className="ml-2 text-portfolio-primary">{project.client}</span>
-                  </div>
-                )}
-              </div>
-            </div>
 
             {/* Content Sections */}
             {project.content ? (
