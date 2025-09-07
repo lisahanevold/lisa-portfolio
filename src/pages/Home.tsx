@@ -45,7 +45,8 @@ const Home = () => {
               <p className="text-lg text-muted-foreground max-w-xl leading-relaxed">
                 A designer with expertise within UX, service and strategic design. 
                 I have worked on projects in different fields of design with a focus 
-                on solving problems and creating the best possible user experience.
+                on solving problems and creating the best possible user experience. 
+                Welcome to my portfolio!
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
