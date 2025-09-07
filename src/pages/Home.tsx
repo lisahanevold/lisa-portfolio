@@ -112,7 +112,7 @@ const Home = () => {
             {projects.map((project, index) => (
               <div 
                 key={project.id}
-                className={`transition-all duration-700 delay-${index * 100}`}
+                className={`transition-all duration-700 delay-${index * 100} h-full`}
                 style={{
                   animationDelay: `${index * 100}ms`,
                   animation: isVisible ? 'fadeInUp 0.7s ease-out forwards' : 'none',

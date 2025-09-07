@@ -181,7 +181,12 @@ const ProjectDetail = () => {
                 Explore More Projects
               </h3>
               <Button asChild>
-                <Link to="/projects">
+                <Link 
+                  to="/projects"
+                  onClick={() => {
+                    setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 100);
+                  }}
+                >
                   View All Projects
                 </Link>
               </Button>

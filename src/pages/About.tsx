@@ -77,13 +77,13 @@ const About = () => {
               
               <div className="flex gap-4 pt-4">
                 <Button asChild>
-                  <a href="mailto:lisa@example.com" className="flex items-center">
+                  <a href="mailto:lisa.hanevold@example.com" className="flex items-center">
                     <Mail className="mr-2 w-4 h-4" />
                     Get In Touch
                   </a>
                 </Button>
                 <Button variant="outline" asChild>
-                  <a href="https://linkedin.com/in/lisanevold" target="_blank" rel="noopener noreferrer" className="flex items-center">
+                  <a href="https://linkedin.com/in/lisahanevold" target="_blank" rel="noopener noreferrer" className="flex items-center">
                     <Linkedin className="mr-2 w-4 h-4" />
                     LinkedIn
                   </a>
@@ -149,6 +149,67 @@ const About = () => {
             </div>
           </div>
 
+          {/* Contact Section */}
+          <div className="mb-20">
+            <h2 className="text-3xl font-playfair font-bold text-portfolio-primary mb-8 text-center">
+              Get In Touch
+            </h2>
+            <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+              <div className="bg-card rounded-2xl p-8 shadow-md">
+                <h3 className="text-xl font-playfair font-semibold text-portfolio-primary mb-4">
+                  Contact Information
+                </h3>
+                <div className="space-y-4">
+                  <div className="flex items-center">
+                    <Mail className="w-5 h-5 text-portfolio-accent mr-3" />
+                    <a href="mailto:lisa.hanevold@example.com" className="text-muted-foreground hover:text-portfolio-accent transition-colors">
+                      lisa.hanevold@example.com
+                    </a>
+                  </div>
+                  <div className="flex items-center">
+                    <Linkedin className="w-5 h-5 text-portfolio-accent mr-3" />
+                    <a 
+                      href="https://linkedin.com/in/lisahanevold" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="text-muted-foreground hover:text-portfolio-accent transition-colors"
+                    >
+                      linkedin.com/in/lisahanevold
+                    </a>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="bg-card rounded-2xl p-8 shadow-md">
+                <h3 className="text-xl font-playfair font-semibold text-portfolio-primary mb-4">
+                  What I Can Help With
+                </h3>
+                <ul className="space-y-3 text-muted-foreground">
+                  <li className="flex items-start">
+                    <span className="w-2 h-2 bg-portfolio-accent rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                    UX/UI Design Projects
+                  </li>
+                  <li className="flex items-start">
+                    <span className="w-2 h-2 bg-portfolio-accent rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                    Service Design Consulting
+                  </li>
+                  <li className="flex items-start">
+                    <span className="w-2 h-2 bg-portfolio-accent rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                    Strategic Design Planning
+                  </li>
+                  <li className="flex items-start">
+                    <span className="w-2 h-2 bg-portfolio-accent rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                    User Research & Testing
+                  </li>
+                  <li className="flex items-start">
+                    <span className="w-2 h-2 bg-portfolio-accent rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                    Design Team Collaboration
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
           {/* CTA Section */}
           <div className="text-center bg-card rounded-2xl p-12 shadow-lg">
             <h2 className="text-3xl font-playfair font-bold text-portfolio-primary mb-4">
@@ -160,7 +221,7 @@ const About = () => {
               I'd love to hear about your project.
             </p>
             <Button asChild size="lg">
-              <a href="mailto:lisa@example.com">
+              <a href="mailto:lisa.hanevold@example.com">
                 Start a Conversation
               </a>
             </Button>
