@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 import ProjectCard from '@/components/ProjectCard';
 import Navigation from '@/components/Navigation';
 import { projects } from '@/data/projects';
-import heroImage from '@/assets/lisa-hero.jpg';
+import heroImage from '@/assets/me.jpg';
 import Footer from '@/components/Footer';
 
 const Home = () => {
@@ -61,7 +61,10 @@ const Home = () => {
                   asChild
                   className="border-portfolio-primary text-portfolio-primary hover:bg-portfolio-primary hover:text-white px-8 py-6 text-base"
                 >
-                  <Link to="/about">
+                  <Link 
+                    to="/about"
+                    onClick={() => setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 100)}
+                  >
                     About Me
                     <ArrowRight className="ml-2 w-4 h-4" />
                   </Link>
@@ -77,7 +80,7 @@ const Home = () => {
                 <img 
                   src={heroImage} 
                   alt="Lisa Hanevold - UX Designer"
-                  className="relative rounded-2xl shadow-2xl w-full max-w-md mx-auto"
+                  className="relative rounded-2xl shadow-2xl w-full max-w-sm mx-auto"
                 />
               </div>
             </div>
@@ -136,7 +139,10 @@ const Home = () => {
               variant="outline"
               className="border-portfolio-primary text-portfolio-primary hover:bg-portfolio-primary hover:text-white px-8 py-3"
             >
-              <Link to="/projects">
+              <Link 
+                to="/projects"
+                onClick={() => setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 100)}
+              >
                 View All Projects
                 <ArrowRight className="ml-2 w-4 h-4" />
               </Link>

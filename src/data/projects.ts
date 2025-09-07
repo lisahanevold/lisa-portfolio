@@ -26,9 +26,9 @@ export interface Project {
 }
 
 import teambirthImg from '@/assets/project-teambirth.jpg';
-import maternityImg from '@/assets/project-maternity.jpg';
-import laerdalImg from '@/assets/project-laerdal.jpg';
-import circleKImg from '@/assets/project-circle-k.jpg';
+import maternityImg from '@/assets/digiBirth/system_en.png';
+import laerdalImg from '@/assets//d8/Books_edited.png';
+import circleKImg from '@/assets/circleK/Front image.png';
 import studywellImg from '@/assets/project-studywell.jpg';
 import krakaImg from '@/assets/project-kraka.jpg';
 

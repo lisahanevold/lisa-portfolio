@@ -2,6 +2,10 @@ import { Link } from 'react-router-dom';
 import { Mail, Phone, MapPin, Linkedin, Github } from 'lucide-react';
 
 const Footer = () => {
+  const handleLinkClick = () => {
+    setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 100);
+  };
+
   return (
     <footer className="bg-background border-t border-border/40">
       <div className="container py-12">
@@ -21,22 +25,38 @@ const Footer = () => {
             <h4 className="font-semibold text-foreground mb-4">Navigation</h4>
             <ul className="space-y-2">
               <li>
-                <Link to="/" className="text-muted-foreground hover:text-portfolio-accent transition-colors">
+                <Link 
+                  to="/" 
+                  className="text-muted-foreground hover:text-portfolio-accent transition-colors"
+                  onClick={handleLinkClick}
+                >
                   Home
                 </Link>
               </li>
               <li>
-                <Link to="/projects" className="text-muted-foreground hover:text-portfolio-accent transition-colors">
+                <Link 
+                  to="/projects" 
+                  className="text-muted-foreground hover:text-portfolio-accent transition-colors"
+                  onClick={handleLinkClick}
+                >
                   Projects
                 </Link>
               </li>
               <li>
-                <Link to="/about" className="text-muted-foreground hover:text-portfolio-accent transition-colors">
+                <Link 
+                  to="/about" 
+                  className="text-muted-foreground hover:text-portfolio-accent transition-colors"
+                  onClick={handleLinkClick}
+                >
                   About
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="text-muted-foreground hover:text-portfolio-accent transition-colors">
+                <Link 
+                  to="/contact" 
+                  className="text-muted-foreground hover:text-portfolio-accent transition-colors"
+                  onClick={handleLinkClick}
+                >
                   Contact
                 </Link>
               </li>

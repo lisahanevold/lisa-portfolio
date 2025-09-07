@@ -10,8 +10,12 @@ interface ProjectCardProps {
 }
 
 const ProjectCard = ({ id, title, description, image, category }: ProjectCardProps) => {
+  const handleClick = () => {
+    setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 100);
+  };
+
   return (
-    <Link to={`/project/${id}`} className="group block h-full">
+    <Link to={`/project/${id}`} className="group block h-full" onClick={handleClick}>
       <div className="project-card h-full flex flex-col">
         <div className="aspect-[4/3] overflow-hidden">
           <img 

@@ -33,7 +33,11 @@ const Navigation = () => {
     }`}>
       <div className="container">
         <div className="flex items-center justify-between h-16">
-          <Link to="/" className="text-xl font-playfair font-semibold text-portfolio-primary">
+          <Link 
+            to="/" 
+            className="text-xl font-playfair font-semibold text-portfolio-primary"
+            onClick={handleNavClick}
+          >
             Lisa Hanevold
           </Link>
 
