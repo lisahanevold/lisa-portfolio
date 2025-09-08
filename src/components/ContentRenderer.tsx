@@ -17,10 +17,17 @@ const ContentRenderer = ({ content }: ContentRendererProps) => {
               3: 'text-2xl font-playfair font-semibold text-portfolio-primary'
             };
             
+            const level = block.level || 2;
+            const marginTopClasses = level === 2
+              ? (index > 0 ? 'mt-24 md:mt-28' : '')
+              : level === 3
+              ? (index > 0 ? 'mt-12 md:mt-16' : '')
+              : '';
+
             return (
               <HeaderTag 
                 key={index} 
-                className={`${headerClasses[block.level || 2]} ${index > 0 ? (block.level === 3 ? 'mt-10' : 'mt-12') : ''}`}
+                className={`${headerClasses[block.level || 2]} ${marginTopClasses}`}
               >
                 {block.content}
               </HeaderTag>
@@ -28,7 +35,7 @@ const ContentRenderer = ({ content }: ContentRendererProps) => {
 
           case 'image':
             return (
-              <div key={index} className="my-6">
+              <figure key={index} className="my-6">
                 <div className="w-full aspect-[4/3] rounded-lg overflow-hidden shadow-lg">
                   <img 
                     src={block.image} 
@@ -36,7 +43,12 @@ const ContentRenderer = ({ content }: ContentRendererProps) => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-              </div>
+                {(block.caption || block.content) && (
+                  <figcaption className="mt-2 text-sm text-muted-foreground/80 text-center">
+                    {block.caption || block.content}
+                  </figcaption>
+                )}
+              </figure>
             );
 
           case 'text':

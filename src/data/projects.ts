@@ -1,8 +1,11 @@
 export interface ContentBlock {
   type: 'text' | 'image' | 'header';
+  // For 'text' blocks, use content as the paragraph text
+  // For 'image' blocks, content may be used as the caption (fallback)
   content: string;
-  image?: string;
-  alt?: string;
+  image?: string; // For 'image' blocks
+  alt?: string;   // For 'image' blocks
+  caption?: string; // Optional explicit caption for images
   level?: 1 | 2 | 3; // For headers
 }
 
@@ -63,7 +66,8 @@ export const projects: Project[] = [
         type: 'image',
         content: '',
         image: teamBirthHuddle,
-        alt: 'Co-design workshop session'
+        alt: 'TeamBirth being used in a clincal setting',
+        caption: 'TeamBirth being used in a clincal setting'
       },
    
       {
