@@ -36,11 +36,11 @@ const ContentRenderer = ({ content }: ContentRendererProps) => {
           case 'image':
             return (
               <figure key={index} className="my-6">
-                <div className="w-full aspect-[4/3] rounded-lg overflow-hidden shadow-lg">
+                <div className="w-full rounded-lg overflow-hidden shadow-lg">
                   <img 
                     src={block.image} 
                     alt={block.alt || ''}
-                    className="w-full h-full object-cover"
+                    className="w-full h-auto object-contain max-h-[70vh]"
                   />
                 </div>
                 {(block.caption || block.content) && (

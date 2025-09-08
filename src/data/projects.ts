@@ -35,6 +35,7 @@ import circleKImg from '@/assets/circleK/Front image.png';
 import studywellImg from '@/assets/project-studywell.jpg';
 import krakaImg from '@/assets/kråka/Kråka_mPc.jpg';
 import teamBirthHuddle from '@/assets/master/TeamBirth_2.png';
+import masterProcess from '@/assets/master/process.png';
 
 export const projects: Project[] = [
   {
@@ -72,22 +73,22 @@ export const projects: Project[] = [
    
       {
         type: 'header',
-        content: 'Solutions & Approach',
+        content: 'Process',
         level: 2
       },
       {
         type: 'text',
-        content: 'Extensive ethnographic research in Nepal'
+        content: 'This project was carried out as a service design project with a strategic design approach, utilizing methods from participatory design and ethnographic research. The approaches were used to form a holistic understanding of the current maternal healthcare system in urban Nepal, with the end-users’ needs and experiences in focus.'
       },
       {
         type: 'text',
-        content: 'Co-design workshops with local healthcare workers'
+        content: 'By using methods such as semi-structured interviews, focus groups, workshops, user journey mapping, and SWOT-analysis, we identified pain points for the targeted users, together with opportunities and barriers for adapting and implementing the TeamBirth model of care into health facilities in urban Nepal. During our field-trip in Nepal, we also conducted a version of a design sprint, including the phases of primary research, ideation, prototyping and user testing.'
       },
       {
         type: 'image',
         content: '',
-        image: maternityImg,
-        alt: 'Co-design workshop session'
+        image: masterProcess,
+        alt: 'Overview of the process'
       },
       {
         type: 'text',
