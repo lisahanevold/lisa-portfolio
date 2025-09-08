@@ -31,6 +31,7 @@ import laerdalImg from '@/assets//d8/Books_edited.png';
 import circleKImg from '@/assets/circleK/Front image.png';
 import studywellImg from '@/assets/project-studywell.jpg';
 import krakaImg from '@/assets/kråka/Kråka_mPc.jpg';
+import teamBirthHuddle from '@/assets/master/TeamBirth_2.png';
 
 export const projects: Project[] = [
   {
@@ -40,32 +41,31 @@ export const projects: Project[] = [
     longDescription: 'This master thesis project explored the complex challenge of adapting western healthcare solutions for different cultural contexts. Working with TeamBirth, a communication and empowerment tool for maternity care, I investigated how to make it culturally appropriate and effective in urban Nepali healthcare settings.',
     image: teambirthImg,
     category: 'Service Design',
-    year: '2023',
-    client: 'Master Thesis',
+    year: '2025',
+    client: 'Ariadne Labs & Laerdal Global Health',
     duration: '6 months',
     role: 'UX Researcher & Service Designer',
     content: [
       {
         type: 'header',
-        content: 'Challenges',
+        content: 'Project Description',
         level: 2
       },
       {
         type: 'text',
-        content: 'Cultural sensitivity in healthcare communication'
+        content: 'This master´s thesis explores whether TeamBirth, an intervention designed to promote respectful care, effective communication, and shared decision-making during labor, can contribute to improved health outcomes and birth experiences for mothers in urban Nepal. Multiple studies report that many women giving birth at Nepali health facilities experience at least one form of disrespect or abuse during labor. Furthermore, the Government of Nepal has identified the lack of respectful and quality care as a key barrier to reducing maternal and neonatal mortality rates.'
       },
       {
         type: 'text',
-        content: 'Language barriers and local customs'
+        content: 'This thesis aims to identify both opportunities and barriers for the implementation of TeamBirth in Nepali health facilities and to propose adaptations that address these barriers. TeamBirth was originally developed by Ariadne Labs for hospitals in the United States. It is now being explored if their intervention can address the unmet needs for respectful care in low- to middle-income countries as well, beginning with Nepal.'
       },
       {
-        type: 'text',
-        content: 'Different healthcare infrastructure'
+        type: 'image',
+        content: '',
+        image: teamBirthHuddle,
+        alt: 'Co-design workshop session'
       },
-      {
-        type: 'text',
-        content: 'Varying literacy levels among users'
-      },
+   
       {
         type: 'header',
         content: 'Solutions & Approach',

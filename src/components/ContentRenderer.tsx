@@ -20,7 +20,7 @@ const ContentRenderer = ({ content }: ContentRendererProps) => {
             return (
               <HeaderTag 
                 key={index} 
-                className={headerClasses[block.level || 2]}
+                className={`${headerClasses[block.level || 2]} ${index > 0 ? (block.level === 3 ? 'mt-10' : 'mt-12') : ''}`}
               >
                 {block.content}
               </HeaderTag>
