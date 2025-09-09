@@ -52,7 +52,7 @@ export const projects: Project[] = [
     content: [
       {
         type: 'header',
-        content: 'Proj Description',
+        content: 'Project Description',
         level: 2
       },
       {
@@ -90,26 +90,24 @@ export const projects: Project[] = [
         image: masterProcess,
         alt: 'Overview of the process'
       },
-      {
-        type: 'text',
-        content: 'Cultural adaptation framework development'
-      },
-      {
-        type: 'text',
-        content: 'Localized communication strategies'
-      },
+      
+      
       {
         type: 'header',
-        content: 'Outcomes & Impact',
+        content: 'Primary Research',
         level: 2
       },
       {
         type: 'text',
-        content: 'Successfully adapted product for Nepali context'
+        content: 'Before and during our 4 week field trip to Nepal we conducted primary research including interviews, focus groups, workshops and observation studies.'
       },
       {
         type: 'text',
-        content: 'Developed cultural adaptation methodology'
+        content: 'Our goal was to gain a comprehensive understanding of the cultural context, the maternal healthcare system, and issues related to motherhood, before focusing on TeamBirth specifically the last two weeks of the field trip. This was because we believed it was essential for us to address, as objectively as possible, whether TeamBirth could meet the actual needs of the users and add value within the Nepalese maternity care system.'
+      },
+      {
+        type: 'text',
+        content: 'We spoke with a range of relevant users and stakeholders including psychiatrists, doctors, midwives, Nepali mothers, husbands and women´s rights activists.'
       },
       {
         type: 'image',
