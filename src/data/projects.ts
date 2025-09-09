@@ -8,6 +8,7 @@ export interface ContentBlock {
   caption?: string; // Optional explicit caption for images
   level?: 1 | 2 | 3; // For headers
   transparentBackground?: boolean; // For images that should not have a background/shadow
+  fullWidth?: boolean; // For images that should span the full width of the content area
 }
 
 export interface Project {
@@ -37,6 +38,7 @@ import studywellImg from '@/assets/project-studywell.jpg';
 import krakaImg from '@/assets/kråka/Kråka_mPc.jpg';
 import teamBirthHuddle from '@/assets/master/TeamBirth_2.png';
 import masterProcess from '@/assets/master/process.png';
+import masterGrid from '@/assets/master/smallerGRID.png';
  
 export const projects: Project[] = [
   {
@@ -115,17 +117,17 @@ export const projects: Project[] = [
       {
         type: 'image',
         content: '',
-        image: laerdalImg,
-        alt: 'Implementation results'
+        image: masterGrid,
+        alt: 'Pictures from primary research',
+        caption: 'Pictures from hospital visits in Nepal',
+        transparentBackground: true,
+        fullWidth: true
       },
       {
-        type: 'text',
-        content: 'Improved maternal care communication protocols'
+        type: 'header',
+        content: 'Key Findings',
+        level: 2
       },
-      {
-        type: 'text',
-        content: 'Recommendations for scalable implementation'
-      }
     ]
   },
   {
