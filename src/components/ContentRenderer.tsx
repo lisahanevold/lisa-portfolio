@@ -14,7 +14,8 @@ const ContentRenderer = ({ content }: ContentRendererProps) => {
             const headerClasses = {
               1: 'text-4xl lg:text-5xl font-playfair font-bold text-portfolio-primary',
               2: 'text-3xl font-playfair font-bold text-portfolio-primary',
-              3: 'text-2xl font-playfair font-semibold text-portfolio-primary'
+              3: 'text-2xl font-playfair font-semibold text-portfolio-primary',
+              4: 'text-lg font-inter font-medium text-portfolio-primary' // New h4 style
             };
             
             const level = block.level || 2;
@@ -22,6 +23,8 @@ const ContentRenderer = ({ content }: ContentRendererProps) => {
               ? (index > 0 ? 'mt-24 md:mt-28' : '')
               : level === 3
               ? (index > 0 ? 'mt-12 md:mt-16' : '')
+              : level === 4
+              ? (index > 0 ? 'mt-8 md:mt-10' : '') // Adjusted margin for h4
               : '';
 
             return (
@@ -54,9 +57,9 @@ const ContentRenderer = ({ content }: ContentRendererProps) => {
           case 'text':
           default:
             return (
-              <p key={index} className="text-muted-foreground leading-relaxed">
-                {block.content}
-              </p>
+              <p key={index} className="text-muted-foreground leading-relaxed"
+                dangerouslySetInnerHTML={{ __html: block.content }}
+              />
             );
         }
       })}

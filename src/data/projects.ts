@@ -6,7 +6,7 @@ export interface ContentBlock {
   image?: string; // For 'image' blocks
   alt?: string;   // For 'image' blocks
   caption?: string; // Optional explicit caption for images
-  level?: 1 | 2 | 3; // For headers
+  level?: 1 | 2 | 3 | 4; // For headers
   transparentBackground?: boolean; // For images that should not have a background/shadow
   fullWidth?: boolean; // For images that should span the full width of the content area
 }
@@ -39,6 +39,7 @@ import krakaImg from '@/assets/kråka/Kråka_mPc.jpg';
 import teamBirthHuddle from '@/assets/master/TeamBirth_2.png';
 import masterProcess from '@/assets/master/process.png';
 import masterGrid from '@/assets/master/smallerGRID.png';
+import midwife_led_unit from '@/assets/master/midwife_led_unit.png';
  
 export const projects: Project[] = [
   {
@@ -125,9 +126,35 @@ export const projects: Project[] = [
       },
       {
         type: 'header',
-        content: 'Key Findings',
+        content: 'Key Insights',
         level: 2
       },
+      {
+        type: 'header',
+        content: 'Two Kinds of Birthing Facilities',
+        level: 3
+      },
+      {
+        type: 'text',
+        content: 'One key insight was that there are big differences between how maternity care is provided in Nepal. The two most common types of birthing facilities in urban areas are midwife-led and doctor-led units at public and private hospitals, and they operate quite differently.'
+      },
+      {
+        type: 'header',
+        content: 'Midwife-led units',
+        level: 4
+      },
+      {
+        type:'text',
+        content: 'Midwife-led units are led by <strong>midwives</strong>. When the woman giving birthis admitted to this unit, she stays in one room for the entire delivery.'
+      },
+      {
+        type: 'image',
+        content: '',
+        image: midwife_led_unit,
+        alt: 'Illustration of a midwife-led unit',
+        transparentBackground: true,
+      },
+
     ]
   },
   {
