@@ -7,6 +7,7 @@ export interface ContentBlock {
   alt?: string;   // For 'image' blocks
   caption?: string; // Optional explicit caption for images
   level?: 1 | 2 | 3; // For headers
+  transparentBackground?: boolean; // For images that should not have a background/shadow
 }
 
 export interface Project {
@@ -68,7 +69,8 @@ export const projects: Project[] = [
         content: '',
         image: teamBirthHuddle,
         alt: 'TeamBirth being used in a clincal setting',
-        caption: 'TeamBirth being used in a clincal setting'
+        caption: 'TeamBirth being used in a clincal setting',
+        transparentBackground: true
       },
    
       {
@@ -88,7 +90,8 @@ export const projects: Project[] = [
         type: 'image',
         content: '',
         image: masterProcess,
-        alt: 'Overview of the process'
+        alt: 'Overview of the process',
+        transparentBackground: true
       },
       
       

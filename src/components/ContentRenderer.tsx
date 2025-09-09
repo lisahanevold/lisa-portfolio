@@ -36,7 +36,7 @@ const ContentRenderer = ({ content }: ContentRendererProps) => {
           case 'image':
             return (
               <figure key={index} className="my-6">
-                <div className="w-full rounded-lg overflow-hidden shadow-lg">
+                <div className={block.transparentBackground ? "w-full" : "w-full rounded-lg overflow-hidden shadow-lg"}>
                   <img 
                     src={block.image} 
                     alt={block.alt || ''}
