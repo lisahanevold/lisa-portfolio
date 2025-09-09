@@ -30,13 +30,13 @@ export interface Project {
 
 import teambirthImg from '@/assets/master/midwife_workshop_pic.png';
 import maternityImg from '@/assets/digiBirth/digiBirth_lesspink.jpg';
-import laerdalImg from '@/assets//d8/Books_edited.png';
+import laerdalImg from '@/assets/d8/Books_edited.png';
 import circleKImg from '@/assets/circleK/Front image.png';
 import studywellImg from '@/assets/project-studywell.jpg';
 import krakaImg from '@/assets/kråka/Kråka_mPc.jpg';
 import teamBirthHuddle from '@/assets/master/TeamBirth_2.png';
 import masterProcess from '@/assets/master/process.png';
-
+ 
 export const projects: Project[] = [
   {
     id: 'teambirth-nepal',
@@ -52,7 +52,7 @@ export const projects: Project[] = [
     content: [
       {
         type: 'header',
-        content: 'Project Description',
+        content: 'Proj Description',
         level: 2
       },
       {
