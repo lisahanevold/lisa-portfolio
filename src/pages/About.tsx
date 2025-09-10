@@ -1,7 +1,7 @@
 import { Mail, Linkedin } from 'lucide-react';
 import Navigation from '@/components/Navigation';
 import { Button } from '@/components/ui/button';
-import heroImage from '@/assets/lisa-hero.jpg';
+import heroImage from '@/assets/chill_me_cropped.jpg';
 import Footer from '@/components/Footer';
 
 const About = () => {

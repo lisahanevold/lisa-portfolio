@@ -51,19 +51,10 @@ const Footer = () => {
                   About
                 </Link>
               </li>
-              <li>
-                <Link 
-                  to="/contact" 
-                  className="text-muted-foreground hover:text-portfolio-accent transition-colors"
-                  onClick={handleLinkClick}
-                >
-                  Contact
-                </Link>
-              </li>
             </ul>
           </div>
 
-          {/* Services */}
+          {/*Services*/}
           <div>
             <h4 className="font-semibold text-foreground mb-4">Services</h4>
             <ul className="space-y-2 text-muted-foreground text-sm">
