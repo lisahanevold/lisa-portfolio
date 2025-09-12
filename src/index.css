@@ -139,6 +139,10 @@
     margin-top: 1.5rem !important;
     margin-bottom: 0.75rem !important;
   }
+  h4 {
+    margin-top: 2rem !important;
+    /*margin-bottom: 0.75rem !important;*/
+  }
 }
 
 @layer components {

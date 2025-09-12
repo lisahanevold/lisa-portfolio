@@ -15,7 +15,7 @@ const ContentRenderer = ({ content }: ContentRendererProps) => {
               1: 'text-4xl lg:text-5xl font-playfair font-bold text-portfolio-primary',
               2: 'text-3xl font-playfair font-bold text-portfolio-primary',
               3: 'text-2xl font-playfair font-semibold text-portfolio-primary',
-              4: 'text-lg font-inter font-medium text-portfolio-primary' // New h4 style
+              4: 'text-lg font-playfair font-semibold text-portfolio-primary' // New h4 style
             };
             
             const level = block.level || 2;

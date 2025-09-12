@@ -206,6 +206,15 @@ export const projects: Project[] = [
         alt: 'Abbreviated SWOT analysis',
         transparentBackground: true,
       },
+      {
+        type: 'header',
+        content: 'Our Evaluation',
+        level: 4
+      },
+      {
+        type:'text',
+        content: 'There is a need for an intervention to facilitate respectful care in Nepal, and TeamBirth has a potential to meet this need. However, significant barriers may hinder the acceptance and feasibility of TeamBirth.'
+      },
 
     ]
   },
