@@ -39,7 +39,9 @@ import krakaImg from '@/assets/kråka/Kråka_mPc.jpg';
 import teamBirthHuddle from '@/assets/master/TeamBirth_2.png';
 import masterProcess from '@/assets/master/process.png';
 import masterGrid from '@/assets/master/smallerGRID.png';
-import midwife_led_unit from '@/assets/master/midwife_led_unit.png';
+import midwife_led_unit from '@/assets/master/smallertxt_mid_led.png';
+import doctor_led_unit from '@/assets/master/smallertxt_doc_led_unit.png';
+import target_users from '@/assets/master/targetusers2.png';
  
 export const projects: Project[] = [
   {
@@ -153,6 +155,39 @@ export const projects: Project[] = [
         image: midwife_led_unit,
         alt: 'Illustration of a midwife-led unit',
         transparentBackground: true,
+      },
+      {
+        type: 'header',
+        content: 'Doctor-led units',
+        level: 4
+      },
+      {
+        type:'text',
+        content: 'Doctor-led units are led by <strong>doctors</strong>. When the woman is admitted to this unit, she changes rooms three times during childbirth.'
+      },
+      {
+        type: 'image',
+        content: '',
+        image: doctor_led_unit,
+        alt: 'Illustration of a doctor-led unit',
+        transparentBackground: true,
+      },
+
+      {
+        type: 'header',
+        content: 'Target Users',
+        level: 3
+      },
+      {
+        type:'text',
+        content: 'We gathered several perspectives during our field research. Four of these were considered the target users of TeamBirth in the context of Nepal. The target users are new mothers, her husband, the doctor and the midwife a government hospital. Each of these have distinct needs, challenges, and motivations that must be taken into consideration for TeamBirth to work as intended.'
+      },
+      {
+        type: 'image',
+        content: '',
+        image: target_users,
+        alt: 'Illustration of the defined target users',
+       transparentBackground: true,
       },
 
     ]
