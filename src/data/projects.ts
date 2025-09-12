@@ -42,6 +42,7 @@ import masterGrid from '@/assets/master/smallerGRID.png';
 import midwife_led_unit from '@/assets/master/smallertxt_mid_led.png';
 import doctor_led_unit from '@/assets/master/smallertxt_doc_led_unit.png';
 import target_users from '@/assets/master/targetusers2.png';
+import swot from '@/assets/master/SWOT2.png';
  
 export const projects: Project[] = [
   {
@@ -188,6 +189,22 @@ export const projects: Project[] = [
         image: target_users,
         alt: 'Illustration of the defined target users',
        transparentBackground: true,
+      },
+      {
+        type: 'header',
+        content: 'Evaluating TeamBirth in Nepal',
+        level: 2
+      },
+      {
+        type:'text',
+        content: 'To evaluate the feasibility and impact of implementing TeamBirth in Nepali health facilities we performed an analysis of the target users to understand their needs and challenges, a sustainability analysis to identify barriers for implementing TeamBirth in Nepal, and a strategic analysis to translate these barriers into actionable opportunities to guide the project’s final direction. The results of these analyses are roughly summarized in the strengths/opportunities and weaknesses/threats (SWOT) figure below.'
+      },
+      {
+        type: 'image',
+        content: '',
+        image: swot,
+        alt: 'Abbreviated SWOT analysis',
+        transparentBackground: true,
       },
 
     ]

@@ -11,13 +11,13 @@
   :root {
     /* Brand Colors - Sophisticated Blues & Neutrals */
     --background: 0 0% 100%;
-    --foreground: 216 12% 17%;
+    --foreground: 215 15% 5%;
 
     --card: 0 0% 100%;
-    --card-foreground: 216 12% 17%;
+    --card-foreground: 215 15% 5%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 216 12% 17%;
+    --popover-foreground: 215 15% 5%;
 
     --primary: 215 28% 17%;
     --primary-foreground: 0 0% 98%;
@@ -26,7 +26,7 @@
     --secondary-foreground: 215 25% 27%;
 
     --muted: 210 40% 96%;
-    --muted-foreground: 215 13% 65%;
+    --muted-foreground: 215 15% 35%;
 
     --accent: 215 16% 47%;
     --accent-foreground: 0 0% 98%;
@@ -79,13 +79,13 @@
 
   .dark {
     --background: 215 28% 17%;
-    --foreground: 0 0% 98%;
+    --foreground: 0 0% 100%;
 
     --card: 215 25% 22%;
-    --card-foreground: 0 0% 98%;
+    --card-foreground: 0 0% 100%;
 
     --popover: 215 25% 22%;
-    --popover-foreground: 0 0% 98%;
+    --popover-foreground: 0 0% 100%;
 
     --primary: 210 40% 98%;
     --primary-foreground: 215 28% 17%;
