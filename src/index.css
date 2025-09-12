@@ -130,6 +130,15 @@
   h1, h2, h3, h4, h5, h6 {
     @apply font-playfair;
   }
+  h2 {
+    margin-top: 3rem !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  h3 {
+    margin-top: 1.5rem !important;
+    margin-bottom: 0.75rem !important;
+  }
 }
 
 @layer components {
