@@ -22,6 +22,7 @@ export interface Project {
   client?: string;
   duration?: string;
   role: string;
+  collaborators?: string;
   content?: ContentBlock[];
   // Legacy properties for backward compatibility
   challenges?: string[];
@@ -58,6 +59,7 @@ export const projects: Project[] = [
     client: 'Ariadne Labs & Laerdal Global Health',
     duration: '6 months',
     role: 'UX Researcher & Service Designer',
+    collaborators: 'Ane Sofie Forseth',
     content: [
       {
         type: 'header',
@@ -70,14 +72,14 @@ export const projects: Project[] = [
       },
       {
         type: 'text',
-        content: 'This thesis aims to identify both opportunities and barriers for the implementation of TeamBirth in Nepali health facilities and to propose adaptations that address these barriers. TeamBirth was originally developed by Ariadne Labs for hospitals in the United States. It is now being explored if their intervention can address the unmet needs for respectful care in low- to middle-income countries as well, beginning with Nepal. More information about TeamBirth can be found on Ariadne Labs website: https://www.ariadnelabs.org/delivery-decisions-initiative/teambirth/.'
+        content: 'This thesis aims to identify both opportunities and barriers for the implementation of TeamBirth in Nepali health facilities and to propose adaptations that address these barriers. TeamBirth was originally developed by Ariadne Labs for hospitals in the United States. It is now being explored if their intervention can address the unmet needs for respectful care in low- to middle-income countries as well, beginning with Nepal. More information about TeamBirth can be found on <a href="https://www.ariadnelabs.org/delivery-decisions-initiative/teambirth/" target="_blank" rel="noopener noreferrer" class="text-portfolio-accent hover:text-portfolio-primary underline transition-colors duration-200">Ariadne Labs´ website</a>.'
       },
       {
         type: 'image',
         content: '',
         image: teamBirthHuddle,
         alt: 'TeamBirth being used in a clincal setting',
-        caption: 'TeamBirth being used in a clincal setting. From Ariadne Labs. https://www.ariadnelabs.org/delivery-decisions-initiative/teambirth/.',
+        caption: 'TeamBirth being used in a clincal setting',
         transparentBackground: true
       },
    

@@ -1,5 +1,5 @@
 import { useParams, Link } from 'react-router-dom';
-import { ArrowLeft, Calendar, Clock, User, Target } from 'lucide-react';
+import { ArrowLeft, Calendar, Clock, User, Target, Users } from 'lucide-react';
 import Navigation from '@/components/Navigation';
 import { Button } from '@/components/ui/button';
 import { projects } from '@/data/projects';
@@ -92,6 +92,14 @@ const ProjectDetail = () => {
                 <div className="flex items-center text-sm">
                   <span className="text-muted-foreground font-medium">Client:</span>
                   <span className="ml-2 text-portfolio-primary">{project.client}</span>
+                </div>
+              )}
+              
+              {project.collaborators && (
+                <div className="flex items-center text-sm">
+                  <Users className="w-4 h-4 text-portfolio-accent mr-2" />
+                  <span className="text-muted-foreground font-medium">Collaborators:</span>
+                  <span className="ml-2 text-portfolio-primary">{project.collaborators}</span>
                 </div>
               )}
             </div>
