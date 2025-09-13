@@ -47,6 +47,9 @@ import swot from '@/assets/master/SWOT2.png';
 import strategic_matrix from '@/assets/master/Plan_matrix.png';
 import teamBirth_drawing from '@/assets/master/bilde-kopi.png';
 import db_process from '@/assets/digiBirth/process.png';
+import db_painpoints from '@/assets/digiBirth/pain points.png';
+import db_highlighted_painpoints from '@/assets/digiBirth/4painpoints.png';
+import db_user_journey from '@/assets/digiBirth/userjourney.png';
  
 export const projects: Project[] = [
   {
@@ -304,7 +307,7 @@ export const projects: Project[] = [
       },
       {
         type:'text',
-        content: 'Our project, though independent from DigiBirth, shared the same objectives. It involved an extensive insight phase where we mapped pain points and areas for improvement in the Norwegian postpartum care. Additionally, we proposed a solution for integrating DigiBirth into a comprehensive follow-up system to better support and identify women in need of help after childbirth.'
+        content: 'Our project, though independent from DigiBirth, shared the same objectives. It involved an extensive insight phase where we mapped pain points and areas for improvement in the Norwegian postpartum care. We explored how DigiBirth should be designed to meet the needs of the users, and proposed a solution for integrating DigiBirth into a comprehensive follow-up system to better support and identify women in need of help after childbirth.'
       },
       {
         type: 'header',
@@ -324,9 +327,90 @@ export const projects: Project[] = [
         content: '',
         image: db_process,
         alt: 'Illustration of the process',
+        /*caption: 'Illustration of process',*/
         transparentBackground: true,
         fullWidth: true
       },
+      {
+        type: 'header',
+        content: 'Background',
+        level: 2
+      },
+      {
+        type: 'header',
+        content: 'The Problem',
+        level: 4
+      },
+      {
+        type:'text',
+        content: 'Norway is considered one of the safest countries in the world to give birth. Maternal mortality is nearly eliminated, and infant mortality are among the lowest globally. Nevertheless, recent studies show that approximately 4% of all mothers in Norway develop post-traumatic stress disorder (PTSD) as a result of their birth experience, with even more suffering from birth-related trauma symptoms.'
+      },
+      {
+        type:'text',
+        content: 'Many face barriers to accessing the help they need,as birth-related trauma remains a stigmatized topic with limited awareness of its prevalence and treatment options. This lack of understanding extends to healthcare professionals, family members, and the women themselves. Additionally, the Norwegian healthcare system is heavily burdened by a lack of time and resources.'
+      },
+      {
+        type: 'header',
+        content: 'About TeamBirth',
+        level: 4
+      },
+      {
+        type:'text',
+        content: 'Ingvill Engvik Øvsthus, a psychologist and PhD candidate at NTNU, have started the project DigiBirth, a project developing a digital platform for treating women with birth-related trauma symptoms. DigiBirth aims to improve care through early intervention to prevent long-term health issues and development of PTSD. The app-based program will include elements from cognitive behavioral therapy, offering accessible care to all women in need of help. DigiBirth is planned to undergo clinical testing during fall 2025.'
+      },
+      {
+        type: 'header',
+        content: 'Insights',
+        level: 2
+      },
+      {
+        type: 'header',
+        content: 'Key Findings',
+        level: 3
+      },
+      {
+        type:'text',
+        content: 'After the discovery phase of the project, we had large amounts of information that we sorted first in affinity diagrams and later transformed the most recurring pain points into the diagram below. As the project was conducted in Norwegian, the diagram is written in Norwegian, but we selected five pain points that we considered the most essential for our solution that will be presented later.'
+      },
+      {
+        type: 'image',
+        content: '',
+        image: db_painpoints,
+        alt: 'Key pain points from the insight phase',
+        caption: 'Pain points from research spanned over three levels',
+        transparentBackground: true,
+        fullWidth: true
+      },
+      {
+        type: 'header',
+        content: 'Highlighted Pain Points',
+        level: 3
+      },
+      {
+        type: 'image',
+        content: '',
+        image: db_highlighted_painpoints,
+        alt: 'Highlighted pain points',
+        transparentBackground: true
+      },
+      {
+        type: 'header',
+        content: 'User Journeys',
+        level: 3
+      },
+      {
+        type:'text',
+        content: 'To visualize and foster empathy for the issue, we developed personas and user journeys. One of the user journeys we created is presented below. It illustrates the journey of two of the personas before, during and after birth. The purpose of this user journey is to illustrate how two seemingly similar birth experiences can be perceived very differently, depending on how the women are treated during labor and supported after birth.'
+      },
+      {
+        type: 'image',
+        content: '',
+        image: db_user_journey,
+        alt: 'One created user journey',
+        transparentBackground: true,
+        fullWidth: true
+      },
+  
     ]  
   },
   {
