@@ -43,6 +43,8 @@ import midwife_led_unit from '@/assets/master/smallertxt_mid_led.png';
 import doctor_led_unit from '@/assets/master/smallertxt_doc_led_unit.png';
 import target_users from '@/assets/master/targetusers2.png';
 import swot from '@/assets/master/SWOT2.png';
+import strategic_matrix from '@/assets/master/Plan_matrix.png';
+import teamBirth_drawing from '@/assets/master/bilde-kopi.png';
  
 export const projects: Project[] = [
   {
@@ -68,14 +70,14 @@ export const projects: Project[] = [
       },
       {
         type: 'text',
-        content: 'This thesis aims to identify both opportunities and barriers for the implementation of TeamBirth in Nepali health facilities and to propose adaptations that address these barriers. TeamBirth was originally developed by Ariadne Labs for hospitals in the United States. It is now being explored if their intervention can address the unmet needs for respectful care in low- to middle-income countries as well, beginning with Nepal.'
+        content: 'This thesis aims to identify both opportunities and barriers for the implementation of TeamBirth in Nepali health facilities and to propose adaptations that address these barriers. TeamBirth was originally developed by Ariadne Labs for hospitals in the United States. It is now being explored if their intervention can address the unmet needs for respectful care in low- to middle-income countries as well, beginning with Nepal. More information about TeamBirth can be found on Ariadne Labs website: https://www.ariadnelabs.org/delivery-decisions-initiative/teambirth/.'
       },
       {
         type: 'image',
         content: '',
         image: teamBirthHuddle,
         alt: 'TeamBirth being used in a clincal setting',
-        caption: 'TeamBirth being used in a clincal setting',
+        caption: 'TeamBirth being used in a clincal setting. From Ariadne Labs. https://www.ariadnelabs.org/delivery-decisions-initiative/teambirth/.',
         transparentBackground: true
       },
    
@@ -133,13 +135,17 @@ export const projects: Project[] = [
         level: 2
       },
       {
+        type: 'text',
+        content: 'Some of the key findings from the primary research were barriers for implementing TeamBirth in Nepal. Some of the identified barriers were limited recognition of respectful care practices, a lack of autonomy and decision-making power among women, and strong hierarchical social structures.'
+      },
+      {
         type: 'header',
         content: 'Two Kinds of Birthing Facilities',
         level: 3
       },
       {
         type: 'text',
-        content: 'One key insight was that there are big differences between how maternity care is provided in Nepal. The two most common types of birthing facilities in urban areas are midwife-led and doctor-led units at public and private hospitals, and they operate quite differently.'
+        content: 'Another key insight was that there are big differences between how maternity care is provided in Nepal. The two most common types of birthing facilities in urban areas are midwife-led and doctor-led units at public and private hospitals, and they operate quite differently.'
       },
       {
         type: 'header',
@@ -215,6 +221,59 @@ export const projects: Project[] = [
         type:'text',
         content: 'There is a need for an intervention to facilitate respectful care in Nepal, and TeamBirth has a potential to meet this need. However, significant barriers may hinder the acceptance and feasibility of TeamBirth.'
       },
+      {
+        type: 'header',
+        content: 'Result: Strategic Plan',
+        level: 2
+      },
+      {
+        type:'text',
+        content: 'Our final delivery is a strategic plan with a short-, mid-, and long-term perspective that focuses on gradual change and iterative development to provide recommendations for the future work of Ariadne Labs. The plan aims to align with local constraints, future trends and Ariadne Labs´ vision for upcoming work. An overview over the strategic plan can be seen in the matrix below.'
+      },
+    
+      {
+        type: 'image',
+        content: '',
+        image: strategic_matrix,
+        alt: 'Overview of the strategic plan in a matrix',
+        transparentBackground: true,
+        fullWidth: true
+      },
+      {
+        type:'text',
+        content: 'We developed suggestions for specific design choices for all terms in the strategic plan, although these will not be presented in the portfolio. Please reach out if you are interested in the full report or more details. Our insights and the strategic plan have been presented to Ariadne Labs, and they will continue working on the project from our findings.'
+      },
+      {
+        type: 'header',
+        content: 'Reflections',
+        level: 2
+      },
+      {
+        type:'text',
+        content: 'This project has probably been the most challenging, but also the most rewarding project I have worked on so far. We traveled to Nepal without any previous contact points in the country and encountered challenges we would not have faced working on a project in Norway. Throughout the project, we had to work around a language barrier, experienced how different social norms affects results and interactions, and had to be flexible and adapt quickly to unforeseen situations and opportunities that came our way. In Norway, we have an intuitive understanding of people and situations through understanding the language, social cues, and norms. In Nepal, a lot of this was foreign to us and we often felt unsure what was considered impolite to ask about or discuss.'
+      },
+      {
+        type:'text',
+        content: 'We also experienced uncertainties about whether people gave us honest answers. This was especially challenging when testing the original TeamBirth board. Since this is an already well-developed tool that we brought with us, we felt that many people wanted to be polite and positive towards it. It took some trial and error when doing user testing to find a good way to present it to get users´ honest opinions on it.'
+      },
+      {
+        type:'text',
+        content: 'Additionally, we got to test out the use of different design methods on user from a different culture and without much previous knowledge of design. This made us reflect around when to use different the different tools and gave us the opportunity to get creative and test out new methods.'
+      },
+      {
+        type:'text',
+        content: 'This project has given me the opportunity to grow as a designer and broadened my perspective. I have learnt about ethnographic research, gotten more confident as a service and strategic designer and learnt from collaborating with talented people from two internationally recognized organizations. I am grateful for the opportuntity to have worked with Ariadne Labs and Leardal Global Health on this project, and look forward to see the results of their work in Nepal.'
+      },
+      {
+        type: 'image',
+        content: '',
+        image: teamBirth_drawing,
+        alt: 'Overview of the strategic plan in a matrix',
+        fullWidth: true
+    
+      },
+  
+
 
     ]
   },
