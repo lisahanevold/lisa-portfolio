@@ -46,6 +46,7 @@ import target_users from '@/assets/master/targetusers2.png';
 import swot from '@/assets/master/SWOT2.png';
 import strategic_matrix from '@/assets/master/Plan_matrix.png';
 import teamBirth_drawing from '@/assets/master/bilde-kopi.png';
+import db_process from '@/assets/digiBirth/process.png';
  
 export const projects: Project[] = [
   {
@@ -281,32 +282,52 @@ export const projects: Project[] = [
   },
   {
     id: 'maternity-care',
-    title: 'Changes in the Current Maternity Care',
+    title: 'Improving Postpartum Care to Reduce Consequences of Birth Trauma',
     description: 'A service design project to ensure adequate follow-up after a traumatic birth experience',
-    longDescription: 'This service design project focused on addressing the gaps in postpartum care following traumatic birth experiences. Through extensive research and stakeholder interviews, I developed a comprehensive service blueprint to improve support systems for new mothers.',
+    longDescription: 'This service design project focused on addressing the gaps in postpartum care following traumatic birth experiences. Through extensive research and stakeholder interviews, we developed a comprehensive service blueprint to improve support systems for new mothers.',
     image: maternityImg,
     category: 'Service Design',
-    year: '2023',
-    duration: '4 months',
+    year: '2024',
+    duration: '5 months',
     role: 'Service Designer & UX Researcher',
-    challenges: [
-      'Sensitive topic requiring empathetic approach',
-      'Complex healthcare system navigation',
-      'Multiple stakeholders with different needs',
-      'Varying trauma responses and recovery timelines'
-    ],
-    solutions: [
-      'Trauma-informed design methodology',
-      'Multi-touchpoint service journey mapping',
-      'Stakeholder alignment workshops',
-      'Personalized care pathway development'
-    ],
-    outcomes: [
-      'Comprehensive service blueprint delivered',
-      'Improved follow-up care protocols',
-      'Enhanced patient-provider communication',
-      'Reduced gaps in postpartum support'
-    ]
+    collaborators: 'Ane Sofie Forseth',
+    client: 'NTNU - DigiBirth',
+    content: [
+      {
+        type: 'header',
+        content: 'Project Description',
+        level: 2
+      },
+      {
+        type:'text',
+        content: 'This project was carried out in collaboration with the ongoing research project DigiBirth, which aims to develop a digital treatment program for birth-related trauma symptoms. The main goal of DigiBirth is to increase knowledge about traumatic birth experiences and improve healthcare services for affected women. Currently, the available services and follow-up care are inadequate, and postpartum care faces numerous challenges.'
+      },
+      {
+        type:'text',
+        content: 'Our project, though independent from DigiBirth, shared the same objectives. It involved an extensive insight phase where we mapped pain points and areas for improvement in the Norwegian postpartum care. Additionally, we proposed a solution for integrating DigiBirth into a comprehensive follow-up system to better support and identify women in need of help after childbirth.'
+      },
+      {
+        type: 'header',
+        content: 'Process',
+        level: 2
+      },
+      {
+        type:'text',
+        content: 'The project was approached from a service design perspective, aiming to create a comprehensive overview of the current childbirth system—before, during, and after birth. This began with the perspective of postpartum women and later included the perspective of healthcare professionals. Using methods such as interviews, focus groups, personas, user journeys, and service blueprints, we identified pain points and areas for improvement in today’s postpartum care.'
+      },
+      {
+        type:'text',
+        content: 'We further explored the potential for integrating an app for treating birth-related trauma symptoms, focusing on how it could provide the greatest value to the women who will use it.'
+      },
+      {
+        type: 'image',
+        content: '',
+        image: db_process,
+        alt: 'Illustration of the process',
+        transparentBackground: true,
+        fullWidth: true
+      },
+    ]  
   },
   {
     id: 'laerdal-medical',
