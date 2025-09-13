@@ -54,6 +54,9 @@ import db_bottleneck from '@/assets/digiBirth/bottleneck_morespacing.png';
 import db_roadmap from '@/assets/digiBirth/roadmap.png';
 import db_measures from '@/assets/digiBirth/measures2.png';
 import db_blueprint from '@/assets/digiBirth/blueprint.png';
+import d8_background from '@/assets/d8/Background_laerdal.png';
+import d8_process from '@/assets/d8/process_overview.png';
+import d8_swot from '@/assets/d8/swot_d8.png';
  
 export const projects: Project[] = [
   {
@@ -510,31 +513,78 @@ export const projects: Project[] = [
     id: 'laerdal-medical',
     title: 'Strategic Direction for Laerdal Medical',
     description: 'A strategic design project in collaboration with Laerdal Medical Inc., to improve simulation-based education for medical students in the U.S.',
-    longDescription: 'Working directly with Laerdal Medical, a leading provider of medical simulation equipment, I conducted strategic research to identify opportunities for improving medical education in the United States. This project combined market research, user interviews, and strategic design thinking to develop actionable recommendations.',
+    longDescription: 'Working directly with Laerdal Medical, a leading provider of medical simulation equipment, we conducted strategic research to identify opportunities for improving medical education in the United States. This project combined market research, user interviews, and strategic design thinking to develop actionable recommendations.',
     image: laerdalImg,
     category: 'Strategic Design',
-    year: '2022',
+    year: '2024',
     client: 'Laerdal Medical Inc.',
-    duration: '5 months',
+    duration: '4 months',
     role: 'Strategic Designer & Researcher',
-    challenges: [
-      'Complex medical education ecosystem',
-      'Diverse user needs across institutions',
-      'Regulatory requirements and standards',
-      'Technology adoption in traditional settings'
-    ],
-    solutions: [
-      'Comprehensive market and user research',
-      'Strategic framework development',
-      'Multi-stakeholder workshop facilitation',
-      'Evidence-based recommendation synthesis'
-    ],
-    outcomes: [
-      'Strategic roadmap for U.S. market expansion',
-      'Improved product-market fit insights',
-      'Enhanced educational simulation protocols',
-      'Increased adoption potential identified'
+    collaborators: 'Ane Sofie Forseth, Michelle Lous & Kaja Grindheim Ronglan',
+    content: [
+      {
+        type: 'header',
+        content: 'Project Description',
+        level: 2
+      },
+      {
+        type:'text',
+        content: 'This project presents the development of a strategic direction for Laerdal Medical Inc. Laerdal Medical is a global company developing physical and digital products for healthcare simulations, medical education and resuscitation training. Laerdal is currently exploring how simulation training can be connected to Entrustable Professional Activities (EPAs) in medical education. EPAs are activities that medical students are expected to perform without supervision before entering residency.'
+      },
+      {
+        type:'text',
+        content: 'One of Laerdal’s key customers is medical education institutions who uses simulation products in medical training and assessment of students. Our project was exploring how Laerdal can optimize their products and services for medical education in relation to EPA-based assessment of clinical preparedness of medical students through use of strategic design methods.'
+      },
+      {
+        type: 'header',
+        content: 'Background',
+        level: 2
+      },
+      {
+        type: 'image',
+        content: '',
+        image: d8_background,
+        alt: 'Background information for the project',
+        transparentBackground: true,
+        fullWidth: true
+      },
+      {
+        type: 'header',
+        content: 'Process',
+        level: 2
+      },
+      {
+        type:'text',
+        content: 'Throughout the project, we followed a strategic design process to create a proposal that aligned with Laerdal Medical’s goals. Our process was iterative and analytical, keeping a close dialogue with Laerdal throughout the whole process.'
+      },
+      {
+        type: 'image',
+        content: '',
+        image: d8_process,
+        alt: 'Overview of the process',
+        transparentBackground: true,
+      },
+      {
+        type:'text',
+        content: 'After our first meeting with Laerdal, where we received the project brief, we divided the team into two focus areas. One group conducted an internal analysis of Laerdal, while the other performed an external analysis. The internal analysis aimed to understand Laerdal as a company, focusing on their products, resources, and capabilities. Through workshops, research, meetings, and the development of a service blueprint, we identified Laerdal’s strengths and weaknesses. Meanwhile, the external analysis focused on understanding how medical education works today, explore emerging trends in the field of medical education, and obtain an overview over partners and competitors. This helped uncover potential opportunities and threats. Then, we compiled the findings into a SWOT matrix and established five initial search fields.'
+      },
+      {
+        type: 'image',
+        content: '',
+        image: d8_swot,
+        alt: 'Abbreviated SWOT analysis',
+        caption: 'Shortened SWOT diagram',
+        transparentBackground: true,
+        fullWidth: true
+      },
+      {
+        type:'text',
+        content: 'After several iterations, the search fields were refined into one through a bottleneck analysis. This search field laid the foundation for our strategic direction, which we believe would create value for Laerdal. Finally, by using a Value Proposition Canvas, we proposed how Laerdal could deliver value through short-, mid-, and long-term goals in a strategic plan.'
+      },
+      
+   
     ]
+    
   },
   {
     id: 'circle-k',
