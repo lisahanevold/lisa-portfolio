@@ -26,29 +26,29 @@ const Home = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-24 sm:pt-32">
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className={`space-y-6 transition-all duration-1000 ${
               isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
             }`}>
-              <div className="space-y-2">
-                <p className="text-portfolio-accent font-medium tracking-wide">
+              <div className="space-y-4 sm:space-y-2">
+                <p className="text-portfolio-accent font-medium tracking-wide text-sm sm:text-base">
                   Designer & Problem Solver
                 </p>
-                <h1 className="text-5xl lg:text-6xl font-playfair font-bold text-portfolio-primary leading-tight">
+                <h1 className="text-4xl sm:text-5xl lg:text-6xl font-playfair font-bold text-portfolio-primary leading-tight">
                   Hi, I'm{' '}
                   <span className="text-gradient">Lisa</span>
                 </h1>
               </div>
               
-              <p className="text-lg text-muted-foreground max-w-xl leading-relaxed">
+              <p className="text-base sm:text-lg text-muted-foreground max-w-xl leading-relaxed">
                 A designer with expertise within UX, service and strategic design. 
                 I have worked on projects in different fields of design with a focus 
                 on solving problems and creating the best possible user experience.
               </p>
               
-              <div className="flex flex-col sm:flex-row gap-4 pt-4">
+              <div className="flex flex-col sm:flex-row gap-4 pt-6 sm:pt-4">
                 <Button 
                   onClick={scrollToProjects}
                   className="bg-portfolio-primary hover:bg-portfolio-accent text-white px-8 py-6 text-base font-medium"
