@@ -50,6 +50,10 @@ import db_process from '@/assets/digiBirth/process.png';
 import db_painpoints from '@/assets/digiBirth/pain points.png';
 import db_highlighted_painpoints from '@/assets/digiBirth/4painpoints.png';
 import db_user_journey from '@/assets/digiBirth/userjourney.png';
+import db_bottleneck from '@/assets/digiBirth/bottleneck_morespacing.png';
+import db_roadmap from '@/assets/digiBirth/roadmap.png';
+import db_measures from '@/assets/digiBirth/measures2.png';
+import db_blueprint from '@/assets/digiBirth/blueprint.png';
  
 export const projects: Project[] = [
   {
@@ -409,6 +413,95 @@ export const projects: Project[] = [
         alt: 'One created user journey',
         transparentBackground: true,
         fullWidth: true
+      },
+      {
+        type: 'header',
+        content: 'Scoping',
+        level: 2
+      },
+      {
+        type:'text',
+        content: 'After the discovery phase, we had substantial knowledge about the maternity care in Norway, the complexity of birth traumas, and the perspectives and needs of various stakeholders, as well as insight into the number of challenges and limitations the healthcare sector faces.'
+      },
+      {
+        type:'text',
+        content: 'To determine what we wanted to focus on, we started with the highlighted pain points and mapped out opportunities for potential solutions. The scoping process kan be visualized through a bottleneck analysis where we identified constraints to narrow down the problem. We also came to the realization that there is no established treatment system for birth-related trauma symptoms. Therefore, we chose to focus on how such a treatment system can be developed, and how DigiBirth can play a central role in this.'
+      },
+      {
+        type: 'image',
+        content: '',
+        image: db_bottleneck,
+        alt: 'Bottleneck analysis',
+        transparentBackground: true,
+      },
+      {
+        type: 'header',
+        content: 'Solution: Follow-Up System',
+        level: 2
+      },
+      {
+        type:'text',
+        content: 'The current plan for DigiBirth is to serve as an early intervention to help women understand and process their emotions and symptoms through exercises and validated information. We aim to expand the concept of DigiBirth to contribute to long-term change by establishing a comprehensive follow-up system.'
+      },
+      {
+        type:'text',
+        content: 'Our solution is a concept for how a future follow-up system could be structured. We envision DigiBirth functioning as a catalyst for the creation of this system and helping to raise awareness of the topic. We propose integrating new functionalities into DigiBirth, alongside a supporting system, to offer better and more adequate follow-up care. The solution is visualized below, with the figure (roadmap) illustrating the system along with specific measures for how it can be realized.'
+      },
+      {
+        type: 'header',
+        content: 'Roadmap',
+        level: 3
+      },
+      {
+        type: 'image',
+        content: '',
+        image: db_roadmap,
+        alt: 'Roadmap of system',
+        transparentBackground: true,
+        fullWidth: true
+      },
+      {
+        type: 'header',
+        content: 'Proposed Measures',
+        level: 3
+      },
+      {
+        type: 'image',
+        content: '',
+        image: db_measures,
+        alt: 'Proposed measures',
+        transparentBackground: true,
+        fullWidth: true
+      },
+      {
+        type: 'header',
+        content: 'Service Blueprint',
+        level: 3
+      },
+      {
+        type:'text',
+        content: 'The service blueprint below illustrates how the treatment system allows for better communication between different healthcare services and the women in need of help. Additionally, it shows how and when the new proposed functionalities in DigiBirth becomes relevant. The blueprint is created in Norwegian as the blueprint is aimed at Norwegian stakeholders.'
+      },
+      {
+        type: 'image',
+        content: '',
+        image: db_blueprint,
+        alt: 'Service blueprint',
+        transparentBackground: true,
+        fullWidth: true
+      },
+      {
+        type: 'header',
+        content: 'Reflections',
+        level: 2
+      },
+      {
+        type:'text',
+        content: 'This project has been both rewarding and educational, offering valuable insights into a problem and user group that we initially knew far less about than anticipated. Through our work, we’ve developed a deeper respect for childbirth and motherhood, as well as a frustration over the lack of prioritization and open discussion about these topics in society.'
+      },
+      {
+        type:'text',
+        content: 'The research phase was particularly eye-opening, providing opportunities for insightful conversations with users, stakeholders, along with practical experience in interviewing and designing for a vulnerable user group. However, navigating the complexities of the healthcare system was challenging, as it involves balancing clinical, organizational, economic, political, and human considerations. This made me reflect on how designers can strive to create positive user experiences for patients within the constraints of such a system.'
       },
   
     ]  
