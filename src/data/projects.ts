@@ -1,12 +1,14 @@
 export interface ContentBlock {
-  type: 'text' | 'image' | 'header';
+  type: 'text' | 'image' | 'header' | 'list';
   // For 'text' blocks, use content as the paragraph text
   // For 'image' blocks, content may be used as the caption (fallback)
+  // For 'list' blocks, use content as the list items (separated by newlines)
   content: string;
   image?: string; // For 'image' blocks
   alt?: string;   // For 'image' blocks
   caption?: string; // Optional explicit caption for images
   level?: 1 | 2 | 3 | 4; // For headers
+  listType?: 'bullet' | 'numbered'; // For list blocks
   transparentBackground?: boolean; // For images that should not have a background/shadow
   fullWidth?: boolean; // For images that should span the full width of the content area
 }
@@ -61,6 +63,7 @@ import d8_value_creation_loop from '@/assets/d8/value_creation loop.png';
 import d8_content_book from '@/assets/d8/contents.png';
 import ck_app from '@/assets/circleK/CK_frontscreen.png';
 import ck_plan from '@/assets/circleK/CK_plan.png';
+import ck_keyfindings from '@/assets/circleK/CK_keyFindings.png';
  
 export const projects: Project[] = [
   {
@@ -511,7 +514,7 @@ export const projects: Project[] = [
         content: 'The research phase was particularly eye-opening, providing opportunities for insightful conversations with users, stakeholders, along with practical experience in interviewing and designing for a vulnerable user group. However, navigating the complexities of the healthcare system was challenging, as it involves balancing clinical, organizational, economic, political, and human considerations. This made me reflect on how designers can strive to create positive user experiences for patients within the constraints of such a system.'
       },
   
-    ]  
+    ]
   },
   {
     id: 'laerdal-medical',
@@ -726,6 +729,30 @@ export const projects: Project[] = [
         type: 'header',
         content: 'Key Findings',
         level: 2
+      },
+      {
+        type: 'header',
+        content: 'Key Findings from User Interviews',
+        level: 4
+      },
+      {
+        type: 'image',
+        content: '',
+        image: ck_keyfindings,
+        alt: 'Key findings from user interviews',
+        transparentBackground: true
+      },
+      {
+        type: 'header',
+        content: 'Other Important Findings',
+        level: 4
+      },
+      {
+        type: 'list',
+        content: `Several features are overlapping in the existing apps of Circle K today.
+      Customers on the road have many of the same needs and interests, unrelated to what kind of car they are driving.
+      Many Circle K customers drives different cars and are both private and company customers.`,
+        listType: 'numbered'
       },
     ]  
   

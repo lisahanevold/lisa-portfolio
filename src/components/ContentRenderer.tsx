@@ -54,6 +54,21 @@ const ContentRenderer = ({ content }: ContentRendererProps) => {
               </figure>
             );
 
+          case 'list':
+            const listItems = block.content.split('\n').filter(item => item.trim() !== '');
+            const ListTag = block.listType === 'numbered' ? 'ol' : 'ul';
+            const listClasses = block.listType === 'numbered' 
+              ? 'list-decimal list-outside space-y-2 text-muted-foreground leading-relaxed pl-6'
+              : 'list-disc list-outside space-y-2 text-muted-foreground leading-relaxed pl-6';
+            
+            return (
+              <ListTag key={index} className={listClasses}>
+                {listItems.map((item, itemIndex) => (
+                  <li key={itemIndex} className='pl-2' dangerouslySetInnerHTML={{ __html: item.trim() }} />
+                ))}
+              </ListTag>
+            );
+
           case 'text':
           default:
             return (
