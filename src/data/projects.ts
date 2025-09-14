@@ -59,6 +59,8 @@ import d8_process from '@/assets/d8/process_overview.png';
 import d8_swot from '@/assets/d8/swot_d8.png';
 import d8_value_creation_loop from '@/assets/d8/value_creation loop.png';
 import d8_content_book from '@/assets/d8/contents.png';
+import ck_app from '@/assets/circleK/CK_frontscreen.png';
+import ck_plan from '@/assets/circleK/CK_plan.png';
  
 export const projects: Project[] = [
   {
@@ -679,6 +681,50 @@ export const projects: Project[] = [
       {
         type: 'header',
         content: 'Project Description',
+        level: 2
+      },
+      {
+        type: 'text',
+        content: 'The summer of 2023, I had an internship within the eMobility team of Circle K Europe. The internship had a duration of 8 weeks and during these weeks I conducted an UX-project where I worked with exploring the possibilities of creating a holistic app-experience for the customers of Circle K.'
+      },
+      {
+        type: 'text',
+        content: 'Currently, Circle K Europe provides three mobile applications. One for private customers consuming fuel, carwash and convenience services (Circle K app), one for private customers driving electric vehicles to charge along the road (Circle K Charge) and one for company customers driving fossil fuel cars (Circle K Pro). The problem statement I worked with on the project was:'
+      },
+      {
+        type: 'text',
+        content: '<strong>Should Circle K Europe continue with the current multi-app strategy or work towards a consolidation of the different experiences?</strong>'
+      },
+      {
+        type: 'text',
+        content: 'The main part of the project was field research to understand the needs and interests of the different customers, but I also made a prototype of how a potential solution with a combined customer experience could look like.'
+      },
+      {
+        type: 'image',
+        content: '',
+        image: ck_app,
+        alt: 'Image of the frontscreen of my suggestion for the Circle K app',
+        transparentBackground: true
+      },
+      {
+        type: 'header',
+        content: 'Process',
+        level: 2
+      },
+      {
+        type: 'image',
+        content: '',
+        image: ck_plan,
+        alt: 'Overview of the process',
+        transparentBackground: true
+      },
+      {
+        type: 'text',
+        content: 'I started the projectby obtaining knowledge of the company and the purpose and functionality of the existing apps. Then I proceeded with getting to know the different customers of Circle K. My focus was to get an overview and understanding of all kind of drivers who use Circle K´s services, and find out which needs are similar and which are different across Circle K´s range of customer profiles. I sorted the most prominent insights from the interviews into six key findings.'
+      },
+      {
+        type: 'header',
+        content: 'Key Findings',
         level: 2
       },
     ]  
