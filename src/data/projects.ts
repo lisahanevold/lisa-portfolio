@@ -65,6 +65,11 @@ import ck_app from '@/assets/circleK/CK_frontscreen.png';
 import ck_plan from '@/assets/circleK/CK_plan.png';
 import ck_keyfindings from '@/assets/circleK/CK_keyFindings.png';
 import ck_wireframes from '@/assets/circleK/Apps2.png';
+import gui_sitemap from '@/assets/kråka/sitemap_kråka.png';
+import gui_colors from '@/assets/kråka/color_palette.png';
+import gui_light_logo from '@/assets/kråka/main_logo.png';
+import gui_dark_logos from '@/assets/kråka/dark_logos.png';
+import gui_logos from '@/assets/kråka/logos.png';
  
 export const projects: Project[] = [
   {
@@ -793,7 +798,7 @@ export const projects: Project[] = [
     ]  
   
   },
-  {
+  /*{
     id: 'studywell',
     title: 'StudyWell',
     description: 'A service design project to shape NTNU\'s future campus, aiming to improve students\' well-being and sense of belonging',
@@ -822,7 +827,7 @@ export const projects: Project[] = [
       'Enhanced campus community initiatives',
       'Implementation roadmap for university'
     ]
-  },
+  },*/
   {
     id: 'kraka-pub',
     title: 'Kråka Pub',
@@ -830,27 +835,81 @@ export const projects: Project[] = [
     longDescription: 'This UX/UI project involved designing a complete website experience for Kråka Pub, part of Wettre Brewery. The project focused on creating an engaging digital presence that reflects the pub\'s unique character while providing excellent user experience for visitors seeking information about events, menu, and atmosphere.',
     image: krakaImg,
     category: 'UX/UI Design',
-    year: '2021',
+    year: '2022',
     client: 'Wettre Brewery',
-    duration: '2 months',
+    duration: '4 months',
     role: 'UX/UI Designer',
-    challenges: [
-      'Capturing authentic pub atmosphere online',
-      'Mobile-first design for on-the-go users',
-      'Integration with booking and event systems',
-      'Balancing visual appeal with functionality'
-    ],
-    solutions: [
-      'Immersive visual design reflecting brand personality',
-      'Responsive design for all device types',
-      'Streamlined user flows for common tasks',
-      'Integration with existing brewery systems'
-    ],
-    outcomes: [
-      'Engaging website launched successfully',
-      'Increased online engagement and reservations',
-      'Improved brand consistency across touchpoints',
-      'Enhanced customer experience and satisfaction'
+    content: [
+      {
+        type: 'header',
+        content: 'Project Description',
+        level: 2
+      },
+      {
+        type: 'text',
+        content: 'This project presents a brand identity and website design for Kråka Pub. Kråka Pub is the pub of Wettre Bryggeri, which is a microbrewery located in Vettre, Asker (Norway). The brewery currently has a website for selling their beer, but it does not include the pub itself. The purpose of this website for Kråka Pub is to provide information about the pub, its events and make it more accessible to vistors. It is designed to be easy to navigate, reflect the atmosphere of the pub and make users easily find information about upcoming events.'
+      },
+      {
+        type: 'text',
+        content: 'The project resulted in a suggestion for a brand identity for Kråka Pub that suits the image of Wettre Brewery and prototype for a website created in Figma.'
+      },
+      {
+        type: 'header',
+        content: 'Brand Identity',
+        level: 2
+      },
+      {
+        type: 'header',
+        content: 'Color Palette',
+        level: 3
+      },
+      {
+        type: 'image',
+        content: '',
+        image: gui_colors,
+        alt: 'Main color palette',
+        transparentBackground: true,
+      },
+      {
+        type: 'header',
+        content: 'Logo',
+        level: 3
+      },
+      {
+        type: 'image',
+        content: '',
+        image: gui_logos,
+        alt: 'Main color palette',
+        fullWidth: true
+      },
+      {
+        type: 'header',
+        content: 'Website Design',
+        level: 2
+      },
+      {
+        type: 'header',
+        content: 'Sitemap',
+        level: 3
+      },
+      
+      {
+        type: 'image',
+        content: '',
+        image: gui_sitemap,
+        alt: 'Sitemap of the website architecture',
+        transparentBackground: true,
+        fullWidth: true
+      },
+      {
+        type: 'text',
+        content: 'The website consists of a main page and five category pages. On the main page, users can scroll down to get a quick overview of all the information available on the site. This provides visitors unfamiliar with Kråka a simple way to learn about what Kråka is and what it offers. The category pages provide detailed information about all of Kråka’s services.'
+      },
+      {
+        type: 'text',
+        content: 'The “What’s Happening” category page includes subpages that users can click through. On some pages, users can book a table or the entire venue. These pages provide feedback to confirm successful bookings through a booking confirmation. In the navigation bar, all categories have the same design except for “Book a Table,” which is styled as a button to make it highly accessible. This design ensures that users visiting the site solely to book a table can quickly complete their action without needing to navigate other information.'
+      },
     ]
+    
   }
 ];
