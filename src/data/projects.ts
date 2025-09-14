@@ -57,6 +57,8 @@ import db_blueprint from '@/assets/digiBirth/blueprint.png';
 import d8_background from '@/assets/d8/Background_laerdal.png';
 import d8_process from '@/assets/d8/process_overview.png';
 import d8_swot from '@/assets/d8/swot_d8.png';
+import d8_value_creation_loop from '@/assets/d8/value_creation loop.png';
+import d8_content_book from '@/assets/d8/contents.png';
  
 export const projects: Project[] = [
   {
@@ -562,18 +564,32 @@ export const projects: Project[] = [
         content: '',
         image: d8_process,
         alt: 'Overview of the process',
+        caption: 'Overview of the process',
         transparentBackground: true,
       },
       {
+        type: 'header',
+        content: 'From Project Brief to Strategic Direction',
+        level: 4
+      },
+      {
         type:'text',
-        content: 'After our first meeting with Laerdal, where we received the project brief, we divided the team into two focus areas. One group conducted an internal analysis of Laerdal, while the other performed an external analysis. The internal analysis aimed to understand Laerdal as a company, focusing on their products, resources, and capabilities. Through workshops, research, meetings, and the development of a service blueprint, we identified Laerdal’s strengths and weaknesses. Meanwhile, the external analysis focused on understanding how medical education works today, explore emerging trends in the field of medical education, and obtain an overview over partners and competitors. This helped uncover potential opportunities and threats. Then, we compiled the findings into a SWOT matrix and established five initial search fields.'
+        content: 'After our first meeting with Laerdal, we divided the team into two focus areas. One group conducted an internal analysis of Laerdal, while the other performed an external analysis. I was one of the team members responsible for the external analysis.'
+      },
+      {
+        type:'text',
+        content: 'The purpose of the internal analysis was to understand Laerdal as a company, focusing on their products, resources, and capabilities. Through workshops, research, meetings, and the development of a service blueprint, we identified Laerdal’s strengths and weaknesses. Meanwhile, the external analysis focused on understanding how medical education works today, explore emerging trends in the field of medical education, and obtain an overview over partners and competitors. This helped uncover potential opportunities and threats.'
+      },
+      {
+        type:'text',
+        content: 'The findings from the analyses were compiled into a SWOT matrix that we used as a foundation to conduct a TOWS analysis, which is a tool used to transform the components from the SWOT-analysis into specific action points and strategic directions. The action points that emerged were later used to establish five search fields to narrow down the problem space. A concise version of the SWOT matrix is presented below.'
       },
       {
         type: 'image',
         content: '',
         image: d8_swot,
         alt: 'Abbreviated SWOT analysis',
-        caption: 'Shortened SWOT diagram',
+        /*caption: 'Shortened SWOT diagram',*/
         transparentBackground: true,
         fullWidth: true
       },
@@ -581,6 +597,63 @@ export const projects: Project[] = [
         type:'text',
         content: 'After several iterations, the search fields were refined into one through a bottleneck analysis. This search field laid the foundation for our strategic direction, which we believe would create value for Laerdal. Finally, by using a Value Proposition Canvas, we proposed how Laerdal could deliver value through short-, mid-, and long-term goals in a strategic plan.'
       },
+      {
+        type: 'header',
+        content: 'Result: Strategic Direction',
+        level: 2
+      },
+      {
+        type:'text',
+        content: 'Our final delivery to Leardal Medical was a report with findings from the research we did, together with the strategic proposal. This included a plan with short-term, mid-term and long-term goals that we believed would provide value for Laerdal to optimize their products for EPA-based assessment of medical students.'
+      },
+      {
+        type:'text',
+        content: 'We formed the problem statement:'
+      },
+      {
+        type:'text',
+        content: '<strong>How can Laerdal improve the learning outcomes of medical students through a feedback system that will give value both to the students and Laerdal?</strong>'
+      },
+      {
+        type:'text',
+        content: 'With the strategic proposal we wanted to achieve two goals:'
+      },
+      {
+        type:'text',
+        content: '1. Ensure student focus in product development to create better products that meets the needs of the users. 2. Provide Laerdal with valuable insights for product development and strengthen their role in the market.'
+      },
+      {
+        type: 'image',
+        content: '',
+        image: d8_value_creation_loop,
+        alt: 'Value creation loop',
+        transparentBackground: true,
+      },
+      {
+        type:'text',
+        content: 'Due to confidentiality constraints, I will not show you our solution in detail, but content of the report delivered to Laerdal Medical is visualized below'
+      },
+      {
+        type: 'image',
+        content: '',
+        image: d8_content_book,
+        alt: 'Contents of report',
+        fullWidth: true
+      },
+      {
+        type: 'header',
+        content: 'Reflections',
+        level: 2
+      },
+      {
+        type:'text',
+        content: 'Working on the strategic design project for Laerdal Medical was an enriching experience where I developed new skills in strategic design and learned about the industry of medical technology. As part of a four-member team, I focused on conducting external analysis, understanding the existing system, discovering emerging trends, and performing competitor research. This groundwork was important in shaping our strategic direction. During the conceptualization phase, I mapped connections and patterns, ensuring our solution addressed the correct problem.'
+      },
+      {
+        type:'text',
+        content: 'This project provided me with invaluable first-hand experience in entering a new and unfamiliar sector as a designer. Initially, we faced challenges with unfamiliar terminology and understanding the existing system. However, as we connected the dots in our research, I realized our value as design students in an established company and saw how we could contribute with new perspectives. This project has boosted my confidence in tackling complex projects and contributing with innovative ideas in new fields.'
+      },
+      
       
    
     ]
@@ -590,7 +663,7 @@ export const projects: Project[] = [
     id: 'circle-k',
     title: 'Circle K Summer Project',
     description: 'An explorative UX project for Circle K on how they should move forward with their app development',
-    longDescription: 'During my summer internship with Circle K, I led a comprehensive UX research project to determine the strategic direction for their mobile app development. This involved user research, competitive analysis, and prototype development to guide future app initiatives.',
+    longDescription: 'During my summer internship with Circle K, I led a comprehensive UX research project to determine the direction for their mobile app development. This involved user research, competitive analysis, and prototype development to guide future app initiatives.',
     image: circleKImg,
     additionalImages: [
       circleKImg,
@@ -598,28 +671,18 @@ export const projects: Project[] = [
       krakaImg
     ],
     category: 'UX Design',
-    year: '2022',
-    client: 'Circle K',
-    duration: '3 months',
+    year: '2023',
+    client: 'Circle K E-mobility',
+    duration: '2 months',
     role: 'UX Designer & Researcher',
-    challenges: [
-      'Highly competitive retail app market',
-      'Diverse customer demographics',
-      'Integration with existing loyalty systems',
-      'Balancing convenience with functionality'
-    ],
-    solutions: [
-      'User journey mapping and persona development',
-      'Competitive analysis and market positioning',
-      'Rapid prototyping and user testing',
-      'Strategic roadmap development'
-    ],
-    outcomes: [
-      'Clear app development strategy defined',
-      'User-centered design framework established',
-      'Prototype validated with target users',
-      'Recommendations for phased rollout'
-    ]
+    content: [
+      {
+        type: 'header',
+        content: 'Project Description',
+        level: 2
+      },
+    ]  
+  
   },
   {
     id: 'studywell',
