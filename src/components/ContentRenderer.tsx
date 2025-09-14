@@ -15,7 +15,7 @@ const ContentRenderer = ({ content }: ContentRendererProps) => {
               1: 'text-4xl lg:text-5xl font-playfair font-bold text-portfolio-primary',
               2: 'text-3xl font-playfair font-bold text-portfolio-primary',
               3: 'text-2xl font-playfair font-semibold text-portfolio-primary',
-              4: 'text-lg font-playfair font-semibold text-portfolio-primary' // New h4 style
+              4: 'text-lg font-playfair font-semibold text-portfolio-primary'
             };
             
             const level = block.level || 2;
@@ -24,7 +24,7 @@ const ContentRenderer = ({ content }: ContentRendererProps) => {
               : level === 3
               ? (index > 0 ? 'mt-12 md:mt-16' : '')
               : level === 4
-              ? (index > 0 ? 'mt-8 md:mt-10' : '') // Adjusted margin for h4
+              ? (index > 0 ? 'mt-8 md:mt-10' : '')
               : '';
 
             return (
@@ -49,6 +49,30 @@ const ContentRenderer = ({ content }: ContentRendererProps) => {
                 {(block.caption || block.content) && (
                   <figcaption className="mt-2 text-sm text-muted-foreground/80 text-center">
                     {block.caption || block.content}
+                  </figcaption>
+                )}
+              </figure>
+            );
+
+          case 'video':
+            return (
+              <figure key={index} className={block.fullWidth ? "w-full" : "my-6"}>
+                <div className={block.transparentBackground ? "w-full" : "w-full rounded-lg overflow-hidden shadow-lg"}>
+                  <video 
+                    src={block.content}
+                    controls={block.controls !== false}
+                    autoPlay={block.autoplay || false}
+                    loop={block.loop || false}
+                    muted={block.muted || false}
+                    className={block.fullWidth ? "w-full h-auto" : "w-full h-auto object-contain max-h-[70vh]"}
+                    playsInline
+                  >
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+                {(block.caption || block.alt) && (
+                  <figcaption className="mt-2 text-sm text-muted-foreground/80 text-center">
+                    {block.caption || block.alt}
                   </figcaption>
                 )}
               </figure>
