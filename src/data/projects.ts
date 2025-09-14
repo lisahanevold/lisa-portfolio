@@ -754,6 +754,19 @@ export const projects: Project[] = [
       Many Circle K customers drives different cars and are both private and company customers.`,
         listType: 'numbered'
       },
+      {
+        type: 'header',
+        content: 'Result: Circle K - On the Go',
+        level: 2
+      },
+      {
+        type: 'text',
+        content: 'Based on the findings from the research, I made a proposal of a prototype for a combined Circle K app. The app is a suggestion that includes both private and company customers, as well as customers who drive EV´s, fossile fuel cars or both. It will be an app that covers all of Circle K´s services on the road, making it intuitive for the user where to find the information they are looking for.'
+      },
+      {
+        type: 'text',
+        content: 'The research revealed that many Circle K customers had to download more than one of Circle K´s apps to get access to all the services that apply to them. With Circle K - On the Go, the user will get the ability to customize the app after their needs, as well as making it easy to switch between cars if they have more than one!'
+      },
     ]  
   
   },
