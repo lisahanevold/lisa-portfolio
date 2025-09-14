@@ -64,6 +64,7 @@ import d8_content_book from '@/assets/d8/contents.png';
 import ck_app from '@/assets/circleK/CK_frontscreen.png';
 import ck_plan from '@/assets/circleK/CK_plan.png';
 import ck_keyfindings from '@/assets/circleK/CK_keyFindings.png';
+import ck_wireframes from '@/assets/circleK/Apps2.png';
  
 export const projects: Project[] = [
   {
@@ -703,13 +704,6 @@ export const projects: Project[] = [
         content: 'The main part of the project was field research to understand the needs and interests of the different customers, but I also made a prototype of how a potential solution with a combined customer experience could look like.'
       },
       {
-        type: 'image',
-        content: '',
-        image: ck_app,
-        alt: 'Image of the frontscreen of my suggestion for the Circle K app',
-        transparentBackground: true
-      },
-      {
         type: 'header',
         content: 'Process',
         level: 2
@@ -766,6 +760,35 @@ export const projects: Project[] = [
       {
         type: 'text',
         content: 'The research revealed that many Circle K customers had to download more than one of Circle K´s apps to get access to all the services that apply to them. With Circle K - On the Go, the user will get the ability to customize the app after their needs, as well as making it easy to switch between cars if they have more than one!'
+      },
+      {
+        type: 'image',
+        content: '',
+        image: ck_app,
+        alt: 'Image of the frontscreen of my suggestion for the Circle K app',
+        transparentBackground: true
+      },
+      {
+        type: 'header',
+        content: 'Selected Wireframes from Circle K - On the Go',
+        level: 4
+      },
+      {
+        type: 'image',
+        content: '',
+        image: ck_wireframes,
+        alt: 'Wireframes of Circle K - On the Go',
+        transparentBackground: true,
+        fullWidth: true
+      },
+      {
+        type: 'header',
+        content: 'Reflections',
+        level: 2
+      },
+      {
+        type: 'text',
+        content: 'During my summer internship with Circle K, I experienced significant growth as an independent designer and got better at initiating actions critical for the development of a project. This was my first time independently managing a project of this scale within such a large organization. Along the way, I had the opportunity to connect with many people who provided invaluable insights into navigating the complexities of a large company and balancing conflicting customer needs. I also participated in weekly design meetings with Circle K’s design team, where we shared updates, discussed challenges, and explored opportunities moving forward. These meetings provided me with valuable feedback on my project, as well as allowing me to participate in discussions with experienced designers across diverse design fields on their projects.'
       },
     ]  
   
