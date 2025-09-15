@@ -61,17 +61,25 @@ const About = () => {
               
               <div className="space-y-4">
                 <p className="text-muted-foreground leading-relaxed">
+                  This spring I graduated with a masters degree in Industrial Design from NTNU in Trondheim, 
+                  with specialization in interaction and service design. Recently, I have begun a one year
+                  master program in Sustainable Development at Uppsala University in Sweden to gain a new 
+                  perspective on how to create sustainable solutions.
                   My approach to design is deeply rooted in empathy and understanding. I believe 
                   that great design starts with truly understanding the people we're designing for, 
-                  their needs, challenges, and aspirations. This human-centered approach has guided 
-                  me through diverse projects spanning healthcare, education, retail, and technology.
+                  their needs, challenges, and aspirations. What motivates me the most about design is breaking 
+                  down complex challenges into manageable parts and finding creative, user friendly and 
+                  innovative solutions.
                 </p>
                 
                 <p className="text-muted-foreground leading-relaxed">
-                  Whether I'm adapting healthcare solutions for different cultural contexts, 
-                  developing strategic roadmaps for medical technology companies, or designing 
-                  services to improve student well-being, I always strive to create meaningful 
-                  and impactful solutions that make a real difference in people's lives.
+                Alongside my studies, I enjoy balancing an active and social lifestyle. I like to 
+                think of myself as a positive and open-minded person, eager to embrace new experiences
+                and ideas both as a designer and as an individual.
+                </p>
+
+                <p className="text-muted-foreground leading-relaxed">
+                Feel free to reach out if you’d like to learn more about me or my projects!
                 </p>
               </div>
               
