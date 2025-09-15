@@ -876,6 +876,10 @@ export const projects: Project[] = [
         level: 3
       },
       {
+        type: 'text',
+        content: 'The logo was created to suit the logo of Wettre Brewery, while still being unique and recognizable for Kråka Pub.'
+      },
+      {
         type: 'image',
         content: '',
         image: gui_logos,
@@ -908,6 +912,24 @@ export const projects: Project[] = [
       {
         type: 'text',
         content: 'The “What’s Happening” category page includes subpages that users can click through. On some pages, users can book a table or the entire venue. These pages provide feedback to confirm successful bookings through a booking confirmation. In the navigation bar, all categories have the same design except for “Book a Table,” which is styled as a button to make it highly accessible. This design ensures that users visiting the site solely to book a table can quickly complete their action without needing to navigate other information.'
+      },
+      {
+        type: 'header',
+        content: 'Figma Prototype',
+        level: 3
+      },
+      {
+        type: 'header',
+        content: 'Reflections',
+        level: 2
+      },
+      {
+        type: 'text',
+        content: 'Through the process of designing a website from scratch for Wettre Brewery, I improved and advanced my skills in Figma and gained valuable insights into the importance of tone of voice and UX writing in engaging the target audience. I also learned the importance of providing user feedback to confirm successful actions, enhancing the overall user experience.'
+      },
+      {
+        type: 'text',
+        content: 'The project involved multiple iterations of trial and error to ensure that the layout and content were user-friendly, effectively communicated the desired message, and enabled both existing and potential customers of Kråka Pub to quickly find the information they needed. Additionally, I enhanced my proficiency in creating rapid prototypes for testing and conducting user testing to refine the design.'
       },
     ]
     
