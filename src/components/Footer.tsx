@@ -112,10 +112,7 @@ const Footer = () => {
         <div className="border-t border-border/40 mt-8 pt-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-muted-foreground text-sm">
-              © 2024 Lisa Hanevold. All rights reserved.
-            </p>
-            <p className="text-muted-foreground text-sm">
-              Designed & built with passion for great user experiences.
+              © 2025 Lisa Hanevold
             </p>
           </div>
         </div>

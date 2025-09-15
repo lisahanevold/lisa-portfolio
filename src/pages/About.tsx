@@ -15,28 +15,27 @@ const About = () => {
     'Stakeholder Engagement',
     'Cross-cultural Design',
     'Healthcare Design',
-    'Educational Technology'
   ];
 
   const experiences = [
     {
-      title: 'UX Designer',
+      title: 'Designer and App-Developer',
+      company: 'NTNU',
+      period: '2025',
+      description: 'Designed and developed a mobile application (DigiBirth) for treatment of postpartum trauma symptoms'
+    },
+    {
+      title: 'UX Design Intern',
+      company: 'MoreScope',
+      period: 'Summer 2024',
+      description: 'Worked with an interdisciplinary team to create new features in the MoreScope platform related to the EU-taxonomy'
+    },
+    {
+      title: 'UX Design Intern',
       company: 'Circle K',
-      period: 'Summer 2022',
+      period: 'Summer 2023',
       description: 'Led explorative UX research project for mobile app development strategy'
     },
-    {
-      title: 'Strategic Design Consultant',
-      company: 'Laerdal Medical Inc.',
-      period: '2022',
-      description: 'Conducted strategic research for improving simulation-based medical education in the U.S.'
-    },
-    {
-      title: 'Service Design Researcher',
-      company: 'NTNU',
-      period: '2022',
-      description: 'Developed comprehensive service solutions for improving student well-being and campus experience'
-    }
   ];
 
   return (
@@ -112,7 +111,7 @@ const About = () => {
           {/* Skills Section */}
           <div className="mb-20">
             <h2 className="text-3xl font-playfair font-bold text-portfolio-primary mb-8 text-center">
-              Skills & Expertise
+              Skills and Expertise
             </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
               {skills.map((skill, index) => (
