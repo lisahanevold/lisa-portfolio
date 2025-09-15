@@ -1,4 +1,4 @@
-import { Mail, Linkedin } from 'lucide-react';
+import { Mail, Linkedin, Phone } from 'lucide-react';
 import Navigation from '@/components/Navigation';
 import { Button } from '@/components/ui/button';
 import heroImage from '@/assets/chill_me_cropped.jpg';
@@ -175,6 +175,12 @@ const About = () => {
                     </a>
                   </div>
                   <div className="flex items-center">
+                    <Phone className="w-5 h-5 text-portfolio-accent mr-3" />
+                    <a href="tel:+4791314509" className="text-muted-foreground hover:text-portfolio-accent transition-colors">
+                      +47 913 14 509
+                    </a>
+                  </div>
+                  <div className="flex items-center">
                     <Linkedin className="w-5 h-5 text-portfolio-accent mr-3" />
                     <a 
                       href="https://linkedin.com/in/lisahanevold" 
@@ -195,15 +201,15 @@ const About = () => {
                 <ul className="space-y-3 text-muted-foreground">
                   <li className="flex items-start">
                     <span className="w-2 h-2 bg-portfolio-accent rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                    UX/UI Design Projects
+                    UX Design Projects
                   </li>
                   <li className="flex items-start">
                     <span className="w-2 h-2 bg-portfolio-accent rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                    Service Design Consulting
+                    Service Design Projects
                   </li>
                   <li className="flex items-start">
                     <span className="w-2 h-2 bg-portfolio-accent rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                    Strategic Design Planning
+                    Strategic Design Projects
                   </li>
                   <li className="flex items-start">
                     <span className="w-2 h-2 bg-portfolio-accent rounded-full mt-2 mr-3 flex-shrink-0"></span>
@@ -211,7 +217,7 @@ const About = () => {
                   </li>
                   <li className="flex items-start">
                     <span className="w-2 h-2 bg-portfolio-accent rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                    Design Team Collaboration
+                    Project Management
                   </li>
                 </ul>
               </div>
@@ -219,7 +225,8 @@ const About = () => {
           </div>
 
           {/* CTA Section */}
-          <div className="text-center bg-card rounded-2xl p-12 shadow-lg">
+        
+          {/*<div className="text-center bg-card rounded-2xl p-12 shadow-lg">
             <h2 className="text-3xl font-playfair font-bold text-portfolio-primary mb-4">
               Let's Work Together
             </h2>
@@ -233,7 +240,7 @@ const About = () => {
                 Start a Conversation
               </a>
             </Button>
-          </div>
+          </div>*/}
         </div>
       </div>
       
