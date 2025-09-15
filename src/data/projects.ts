@@ -1,16 +1,18 @@
 export interface ContentBlock {
-  type: 'text' | 'image' | 'header' | 'list';
+  type: 'text' | 'image' | 'video' | 'header' | 'list';
   // For 'text' blocks, use content as the paragraph text
   // For 'image' blocks, content may be used as the caption (fallback)
+  // For 'video' blocks, content may be used as the caption (fallback)
   // For 'list' blocks, use content as the list items (separated by newlines)
   content: string;
   image?: string; // For 'image' blocks
-  alt?: string;   // For 'image' blocks
-  caption?: string; // Optional explicit caption for images
+  video?: string; // For 'video' blocks
+  alt?: string;   // For 'image' and 'video' blocks
+  caption?: string; // Optional explicit caption for images and videos
   level?: 1 | 2 | 3 | 4; // For headers
   listType?: 'bullet' | 'numbered'; // For list blocks
-  transparentBackground?: boolean; // For images that should not have a background/shadow
-  fullWidth?: boolean; // For images that should span the full width of the content area
+  transparentBackground?: boolean; // For images and videos that should not have a background/shadow
+  fullWidth?: boolean; // For images and videos that should span the full width of the content area
 }
 
 export interface Project {
@@ -70,6 +72,7 @@ import gui_colors from '@/assets/kråka/color_palette.png';
 import gui_light_logo from '@/assets/kråka/main_logo.png';
 import gui_dark_logos from '@/assets/kråka/dark_logos.png';
 import gui_logos from '@/assets/kråka/logos.png';
+import gui_video from '@/assets/kråka/Compressed_kråka_record.mp4';
  
 export const projects: Project[] = [
   {
@@ -830,7 +833,7 @@ export const projects: Project[] = [
   },*/
   {
     id: 'kraka-pub',
-    title: 'Kråka Pub',
+    title: 'Website Design for Kråka Pub',
     description: 'UX/UI project through website design for Wettre Brewery',
     longDescription: 'This UX/UI project involved designing a complete website experience for Kråka Pub, part of Wettre Brewery. The project focused on creating an engaging digital presence that reflects the pub\'s unique character while providing excellent user experience for visitors seeking information about events, menu, and atmosphere.',
     image: krakaImg,
@@ -917,6 +920,13 @@ export const projects: Project[] = [
         type: 'header',
         content: 'Figma Prototype',
         level: 3
+      },
+      {
+        type: 'video',
+        content: 'Screen recording of the Figma prototype',
+        video: gui_video,
+        alt: 'Screen recording of the Figma prototype',
+        fullWidth: true
       },
       {
         type: 'header',

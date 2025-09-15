@@ -54,6 +54,27 @@ const ContentRenderer = ({ content }: ContentRendererProps) => {
               </figure>
             );
 
+          case 'video':
+            return (
+              <figure key={index} className={block.fullWidth ? "w-full" : "my-6"}>
+                <div className={block.transparentBackground ? "w-full" : "w-full rounded-lg overflow-hidden shadow-lg"}>
+                  <video 
+                    src={block.video} 
+                    controls
+                    className={block.fullWidth ? "w-full h-auto" : "w-full h-auto object-contain max-h-[70vh]"}
+                    poster={block.alt ? undefined : ''}
+                  >
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+                {(block.caption || block.content) && (
+                  <figcaption className="mt-2 text-sm text-muted-foreground/80 text-center">
+                    {block.caption || block.content}
+                  </figcaption>
+                )}
+              </figure>
+            );
+
           case 'list':
             const listItems = block.content.split('\n').filter(item => item.trim() !== '');
             const ListTag = block.listType === 'numbered' ? 'ol' : 'ul';
