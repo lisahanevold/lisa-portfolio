@@ -34,7 +34,7 @@ const Home = () => {
             }`}>
               <div className="space-y-4 sm:space-y-2">
                 <p className="text-portfolio-accent font-medium tracking-wide text-sm sm:text-base">
-                  Designer & Problem Solver
+                  UX and Service Designer
                 </p>
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl font-playfair font-bold text-portfolio-primary leading-tight">
                   Hi, I'm{' '}
