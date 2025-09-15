@@ -681,7 +681,6 @@ export const projects: Project[] = [
     image: circleKImg,
     additionalImages: [
       circleKImg,
-      studywellImg,
       krakaImg
     ],
     category: 'UX Design',

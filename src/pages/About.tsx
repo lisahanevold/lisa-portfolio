@@ -21,7 +21,7 @@ const About = () => {
     {
       title: 'Designer and App-Developer',
       company: 'NTNU',
-      period: '2025',
+      period: 'Spring 2025',
       description: 'Designed and developed a mobile application (DigiBirth) for treatment of postpartum trauma symptoms'
     },
     {
