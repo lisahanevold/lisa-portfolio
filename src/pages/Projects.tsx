@@ -7,7 +7,7 @@ import Footer from '@/components/Footer';
 const Projects = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
   
-  const categories = ['All', 'UX Design', 'Service Design', 'Strategic Design', 'UX/UI Design'];
+  const categories = ['All', 'UX Design', 'Service Design', 'Strategic Design'];
   
   const filteredProjects = selectedCategory === 'All' 
     ? projects 
