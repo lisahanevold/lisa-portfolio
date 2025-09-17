@@ -836,7 +836,7 @@ export const projects: Project[] = [
     description: 'UX/UI project through website design for Wettre Brewery',
     longDescription: 'This UX/UI project involved designing a complete website experience for Kråka Pub, part of Wettre Brewery. The project focused on creating an engaging digital presence that reflects the pub\'s unique character while providing excellent user experience for visitors seeking information about events, menu, and atmosphere.',
     image: krakaImg,
-    category: 'UX/UI Design',
+    category: 'UX Design',
     year: '2022',
     client: 'Wettre Brewery',
     duration: '4 months',
