@@ -307,6 +307,281 @@ export const projects: Project[] = [
     ]
   },
   {
+    id: 'circle-k',
+    title: 'Circle K Summer Project',
+    description: 'An explorative UX project for Circle K on how they should move forward with their app development',
+    longDescription: 'During my summer internship with Circle K, I led a comprehensive UX research project to determine the direction for their mobile app development. This involved user research, competitive analysis, and prototype development to guide future app initiatives.',
+    image: circleKImg,
+    additionalImages: [
+      circleKImg,
+      krakaImg
+    ],
+    category: 'UX Design',
+    year: '2023',
+    client: 'Circle K E-mobility',
+    duration: '2 months',
+    role: 'UX Designer & Researcher',
+    content: [
+      {
+        type: 'header',
+        content: 'Project Description',
+        level: 2
+      },
+      {
+        type: 'text',
+        content: 'The summer of 2023, I had an internship within the eMobility team of Circle K Europe. The internship had a duration of 8 weeks and during these weeks I conducted an UX-project where I worked with exploring the possibilities of creating a holistic app-experience for the customers of Circle K.'
+      },
+      {
+        type: 'text',
+        content: 'Currently, Circle K Europe provides three mobile applications. One for private customers consuming fuel, carwash and convenience services (Circle K app), one for private customers driving electric vehicles to charge along the road (Circle K Charge) and one for company customers driving fossil fuel cars (Circle K Pro). The problem statement I worked with on the project was:'
+      },
+      {
+        type: 'text',
+        content: '<strong>Should Circle K Europe continue with the current multi-app strategy or work towards a consolidation of the different experiences?</strong>'
+      },
+      {
+        type: 'text',
+        content: 'The main part of the project was field research to understand the needs and interests of the different customers, but I also made a prototype of how a potential solution with a combined customer experience could look like.'
+      },
+      {
+        type: 'header',
+        content: 'Process',
+        level: 2
+      },
+      {
+        type: 'image',
+        content: '',
+        image: ck_plan,
+        alt: 'Overview of the process',
+        transparentBackground: true
+      },
+      {
+        type: 'text',
+        content: 'I started the projectby obtaining knowledge of the company and the purpose and functionality of the existing apps. Then I proceeded with getting to know the different customers of Circle K. My focus was to get an overview and understanding of all kind of drivers who use Circle K´s services, and find out which needs are similar and which are different across Circle K´s range of customer profiles. I sorted the most prominent insights from the interviews into six key findings.'
+      },
+      {
+        type: 'header',
+        content: 'Key Findings',
+        level: 2
+      },
+      {
+        type: 'header',
+        content: 'Key Findings from User Interviews',
+        level: 4
+      },
+      {
+        type: 'image',
+        content: '',
+        image: ck_keyfindings,
+        alt: 'Key findings from user interviews',
+        transparentBackground: true
+      },
+      {
+        type: 'header',
+        content: 'Other Important Findings',
+        level: 4
+      },
+      {
+        type: 'list',
+        content: `Several features are overlapping in the existing apps of Circle K today.
+      Customers on the road have many of the same needs and interests, unrelated to what kind of car they are driving.
+      Many Circle K customers drives different cars and are both private and company customers.`,
+        listType: 'numbered'
+      },
+      {
+        type: 'header',
+        content: 'Result: Circle K - On the Go',
+        level: 2
+      },
+      {
+        type: 'text',
+        content: 'Based on the findings from the research, I made a proposal of a prototype for a combined Circle K app. The app is a suggestion that includes both private and company customers, as well as customers who drive EV´s, fossile fuel cars or both. It will be an app that covers all of Circle K´s services on the road, making it intuitive for the user where to find the information they are looking for.'
+      },
+      {
+        type: 'text',
+        content: 'The research revealed that many Circle K customers had to download more than one of Circle K´s apps to get access to all the services that apply to them. With Circle K - On the Go, the user will get the ability to customize the app after their needs, as well as making it easy to switch between cars if they have more than one!'
+      },
+      {
+        type: 'image',
+        content: '',
+        image: ck_app,
+        alt: 'Image of the frontscreen of my suggestion for the Circle K app',
+        transparentBackground: true
+      },
+      {
+        type: 'header',
+        content: 'Selected Wireframes from Circle K - On the Go',
+        level: 4
+      },
+      {
+        type: 'image',
+        content: '',
+        image: ck_wireframes,
+        alt: 'Wireframes of Circle K - On the Go',
+        transparentBackground: true,
+        fullWidth: true
+      },
+      {
+        type: 'header',
+        content: 'Reflections',
+        level: 2
+      },
+      {
+        type: 'text',
+        content: 'During my summer internship with Circle K, I experienced significant growth as an independent designer and got better at initiating actions critical for the development of a project. This was my first time independently managing a project of this scale within such a large organization. Along the way, I had the opportunity to connect with many people who provided invaluable insights into navigating the complexities of a large company and balancing conflicting customer needs. I also participated in weekly design meetings with Circle K’s design team, where we shared updates, discussed challenges, and explored opportunities moving forward. These meetings provided me with valuable feedback on my project, as well as allowing me to participate in discussions with experienced designers across diverse design fields on their projects.'
+      },
+    ]  
+  
+  },
+  {
+    id: 'laerdal-medical',
+    title: 'Strategic Direction for Laerdal Medical',
+    description: 'A strategic design project in collaboration with Laerdal Medical Inc., to improve simulation-based education for medical students in the U.S.',
+    longDescription: 'Working directly with Laerdal Medical, a leading provider of medical simulation equipment, we conducted strategic research to identify opportunities for improving medical education in the United States. This project combined market research, user interviews, and strategic design thinking to develop actionable recommendations.',
+    image: laerdalImg,
+    category: 'Strategic Design',
+    year: '2024',
+    client: 'Laerdal Medical Inc.',
+    duration: '4 months',
+    role: 'Strategic Designer & Researcher',
+    collaborators: 'Ane Sofie Forseth, Michelle Lous & Kaja Grindheim Ronglan',
+    content: [
+      {
+        type: 'header',
+        content: 'Project Description',
+        level: 2
+      },
+      {
+        type:'text',
+        content: 'This project presents the development of a strategic direction for Laerdal Medical Inc. Laerdal Medical is a global company developing physical and digital products for healthcare simulations, medical education and resuscitation training. Laerdal is currently exploring how simulation training can be connected to Entrustable Professional Activities (EPAs) in medical education. EPAs are activities that medical students are expected to perform without supervision before entering residency.'
+      },
+      {
+        type:'text',
+        content: 'One of Laerdal’s key customers is medical education institutions who uses simulation products in medical training and assessment of students. Our project was exploring how Laerdal can optimize their products and services for medical education in relation to EPA-based assessment of clinical preparedness of medical students through use of strategic design methods.'
+      },
+      {
+        type: 'header',
+        content: 'Background',
+        level: 2
+      },
+      {
+        type: 'image',
+        content: '',
+        image: d8_background,
+        alt: 'Background information for the project',
+        transparentBackground: true,
+        fullWidth: true
+      },
+      {
+        type: 'header',
+        content: 'Process',
+        level: 2
+      },
+      {
+        type:'text',
+        content: 'Throughout the project, we followed a strategic design process to create a proposal that aligned with Laerdal Medical’s goals. Our process was iterative and analytical, keeping a close dialogue with Laerdal throughout the whole process.'
+      },
+      {
+        type: 'image',
+        content: '',
+        image: d8_process,
+        alt: 'Overview of the process',
+        caption: 'Overview of the process',
+        transparentBackground: true,
+      },
+      {
+        type: 'header',
+        content: 'From Project Brief to Strategic Direction',
+        level: 4
+      },
+      {
+        type:'text',
+        content: 'After our first meeting with Laerdal, we divided the team into two focus areas. One group conducted an internal analysis of Laerdal, while the other performed an external analysis. I was one of the team members responsible for the external analysis.'
+      },
+      {
+        type:'text',
+        content: 'The purpose of the internal analysis was to understand Laerdal as a company, focusing on their products, resources, and capabilities. Through workshops, research, meetings, and the development of a service blueprint, we identified Laerdal’s strengths and weaknesses. Meanwhile, the external analysis focused on understanding how medical education works today, explore emerging trends in the field of medical education, and obtain an overview over partners and competitors. This helped uncover potential opportunities and threats.'
+      },
+      {
+        type:'text',
+        content: 'The findings from the analyses were compiled into a SWOT matrix that we used as a foundation to conduct a TOWS analysis, which is a tool used to transform the components from the SWOT-analysis into specific action points and strategic directions. The action points that emerged were later used to establish five search fields to narrow down the problem space. A concise version of the SWOT matrix is presented below.'
+      },
+      {
+        type: 'image',
+        content: '',
+        image: d8_swot,
+        alt: 'Abbreviated SWOT analysis',
+        /*caption: 'Shortened SWOT diagram',*/
+        transparentBackground: true,
+        fullWidth: true
+      },
+      {
+        type:'text',
+        content: 'After several iterations, the search fields were refined into one through a bottleneck analysis. This search field laid the foundation for our strategic direction, which we believe would create value for Laerdal. Finally, by using a Value Proposition Canvas, we proposed how Laerdal could deliver value through short-, mid-, and long-term goals in a strategic plan.'
+      },
+      {
+        type: 'header',
+        content: 'Result: Strategic Direction',
+        level: 2
+      },
+      {
+        type:'text',
+        content: 'Our final delivery to Leardal Medical was a report with findings from the research we did, together with the strategic proposal. This included a plan with short-term, mid-term and long-term goals that we believed would provide value for Laerdal to optimize their products for EPA-based assessment of medical students.'
+      },
+      {
+        type:'text',
+        content: 'We formed the problem statement:'
+      },
+      {
+        type:'text',
+        content: '<strong>How can Laerdal improve the learning outcomes of medical students through a feedback system that will give value both to the students and Laerdal?</strong>'
+      },
+      {
+        type:'text',
+        content: 'With the strategic proposal we wanted to achieve two goals:'
+      },
+      {
+        type:'text',
+        content: '1. Ensure student focus in product development to create better products that meets the needs of the users. 2. Provide Laerdal with valuable insights for product development and strengthen their role in the market.'
+      },
+      {
+        type: 'image',
+        content: '',
+        image: d8_value_creation_loop,
+        alt: 'Value creation loop',
+        transparentBackground: true,
+      },
+      {
+        type:'text',
+        content: 'Due to confidentiality constraints, I will not show you our solution in detail, but content of the report delivered to Laerdal Medical is visualized below'
+      },
+      {
+        type: 'image',
+        content: '',
+        image: d8_content_book,
+        alt: 'Contents of report',
+        fullWidth: true
+      },
+      {
+        type: 'header',
+        content: 'Reflections',
+        level: 2
+      },
+      {
+        type:'text',
+        content: 'Working on the strategic design project for Laerdal Medical was an enriching experience where I developed new skills in strategic design and learned about the industry of medical technology. As part of a four-member team, I focused on conducting external analysis, understanding the existing system, discovering emerging trends, and performing competitor research. This groundwork was important in shaping our strategic direction. During the conceptualization phase, I mapped connections and patterns, ensuring our solution addressed the correct problem.'
+      },
+      {
+        type:'text',
+        content: 'This project provided me with invaluable first-hand experience in entering a new and unfamiliar sector as a designer. Initially, we faced challenges with unfamiliar terminology and understanding the existing system. However, as we connected the dots in our research, I realized our value as design students in an established company and saw how we could contribute with new perspectives. This project has boosted my confidence in tackling complex projects and contributing with innovative ideas in new fields.'
+      },
+      
+      
+   
+    ]
+    
+  },
+  {
     id: 'maternity-care',
     title: 'Improving Postpartum Care to Reduce Consequences of Birth Trauma',
     description: 'A service design project to ensure adequate follow-up after a traumatic birth experience',
@@ -524,281 +799,6 @@ export const projects: Project[] = [
       },
   
     ]
-  },
-  {
-    id: 'laerdal-medical',
-    title: 'Strategic Direction for Laerdal Medical',
-    description: 'A strategic design project in collaboration with Laerdal Medical Inc., to improve simulation-based education for medical students in the U.S.',
-    longDescription: 'Working directly with Laerdal Medical, a leading provider of medical simulation equipment, we conducted strategic research to identify opportunities for improving medical education in the United States. This project combined market research, user interviews, and strategic design thinking to develop actionable recommendations.',
-    image: laerdalImg,
-    category: 'Strategic Design',
-    year: '2024',
-    client: 'Laerdal Medical Inc.',
-    duration: '4 months',
-    role: 'Strategic Designer & Researcher',
-    collaborators: 'Ane Sofie Forseth, Michelle Lous & Kaja Grindheim Ronglan',
-    content: [
-      {
-        type: 'header',
-        content: 'Project Description',
-        level: 2
-      },
-      {
-        type:'text',
-        content: 'This project presents the development of a strategic direction for Laerdal Medical Inc. Laerdal Medical is a global company developing physical and digital products for healthcare simulations, medical education and resuscitation training. Laerdal is currently exploring how simulation training can be connected to Entrustable Professional Activities (EPAs) in medical education. EPAs are activities that medical students are expected to perform without supervision before entering residency.'
-      },
-      {
-        type:'text',
-        content: 'One of Laerdal’s key customers is medical education institutions who uses simulation products in medical training and assessment of students. Our project was exploring how Laerdal can optimize their products and services for medical education in relation to EPA-based assessment of clinical preparedness of medical students through use of strategic design methods.'
-      },
-      {
-        type: 'header',
-        content: 'Background',
-        level: 2
-      },
-      {
-        type: 'image',
-        content: '',
-        image: d8_background,
-        alt: 'Background information for the project',
-        transparentBackground: true,
-        fullWidth: true
-      },
-      {
-        type: 'header',
-        content: 'Process',
-        level: 2
-      },
-      {
-        type:'text',
-        content: 'Throughout the project, we followed a strategic design process to create a proposal that aligned with Laerdal Medical’s goals. Our process was iterative and analytical, keeping a close dialogue with Laerdal throughout the whole process.'
-      },
-      {
-        type: 'image',
-        content: '',
-        image: d8_process,
-        alt: 'Overview of the process',
-        caption: 'Overview of the process',
-        transparentBackground: true,
-      },
-      {
-        type: 'header',
-        content: 'From Project Brief to Strategic Direction',
-        level: 4
-      },
-      {
-        type:'text',
-        content: 'After our first meeting with Laerdal, we divided the team into two focus areas. One group conducted an internal analysis of Laerdal, while the other performed an external analysis. I was one of the team members responsible for the external analysis.'
-      },
-      {
-        type:'text',
-        content: 'The purpose of the internal analysis was to understand Laerdal as a company, focusing on their products, resources, and capabilities. Through workshops, research, meetings, and the development of a service blueprint, we identified Laerdal’s strengths and weaknesses. Meanwhile, the external analysis focused on understanding how medical education works today, explore emerging trends in the field of medical education, and obtain an overview over partners and competitors. This helped uncover potential opportunities and threats.'
-      },
-      {
-        type:'text',
-        content: 'The findings from the analyses were compiled into a SWOT matrix that we used as a foundation to conduct a TOWS analysis, which is a tool used to transform the components from the SWOT-analysis into specific action points and strategic directions. The action points that emerged were later used to establish five search fields to narrow down the problem space. A concise version of the SWOT matrix is presented below.'
-      },
-      {
-        type: 'image',
-        content: '',
-        image: d8_swot,
-        alt: 'Abbreviated SWOT analysis',
-        /*caption: 'Shortened SWOT diagram',*/
-        transparentBackground: true,
-        fullWidth: true
-      },
-      {
-        type:'text',
-        content: 'After several iterations, the search fields were refined into one through a bottleneck analysis. This search field laid the foundation for our strategic direction, which we believe would create value for Laerdal. Finally, by using a Value Proposition Canvas, we proposed how Laerdal could deliver value through short-, mid-, and long-term goals in a strategic plan.'
-      },
-      {
-        type: 'header',
-        content: 'Result: Strategic Direction',
-        level: 2
-      },
-      {
-        type:'text',
-        content: 'Our final delivery to Leardal Medical was a report with findings from the research we did, together with the strategic proposal. This included a plan with short-term, mid-term and long-term goals that we believed would provide value for Laerdal to optimize their products for EPA-based assessment of medical students.'
-      },
-      {
-        type:'text',
-        content: 'We formed the problem statement:'
-      },
-      {
-        type:'text',
-        content: '<strong>How can Laerdal improve the learning outcomes of medical students through a feedback system that will give value both to the students and Laerdal?</strong>'
-      },
-      {
-        type:'text',
-        content: 'With the strategic proposal we wanted to achieve two goals:'
-      },
-      {
-        type:'text',
-        content: '1. Ensure student focus in product development to create better products that meets the needs of the users. 2. Provide Laerdal with valuable insights for product development and strengthen their role in the market.'
-      },
-      {
-        type: 'image',
-        content: '',
-        image: d8_value_creation_loop,
-        alt: 'Value creation loop',
-        transparentBackground: true,
-      },
-      {
-        type:'text',
-        content: 'Due to confidentiality constraints, I will not show you our solution in detail, but content of the report delivered to Laerdal Medical is visualized below'
-      },
-      {
-        type: 'image',
-        content: '',
-        image: d8_content_book,
-        alt: 'Contents of report',
-        fullWidth: true
-      },
-      {
-        type: 'header',
-        content: 'Reflections',
-        level: 2
-      },
-      {
-        type:'text',
-        content: 'Working on the strategic design project for Laerdal Medical was an enriching experience where I developed new skills in strategic design and learned about the industry of medical technology. As part of a four-member team, I focused on conducting external analysis, understanding the existing system, discovering emerging trends, and performing competitor research. This groundwork was important in shaping our strategic direction. During the conceptualization phase, I mapped connections and patterns, ensuring our solution addressed the correct problem.'
-      },
-      {
-        type:'text',
-        content: 'This project provided me with invaluable first-hand experience in entering a new and unfamiliar sector as a designer. Initially, we faced challenges with unfamiliar terminology and understanding the existing system. However, as we connected the dots in our research, I realized our value as design students in an established company and saw how we could contribute with new perspectives. This project has boosted my confidence in tackling complex projects and contributing with innovative ideas in new fields.'
-      },
-      
-      
-   
-    ]
-    
-  },
-  {
-    id: 'circle-k',
-    title: 'Circle K Summer Project',
-    description: 'An explorative UX project for Circle K on how they should move forward with their app development',
-    longDescription: 'During my summer internship with Circle K, I led a comprehensive UX research project to determine the direction for their mobile app development. This involved user research, competitive analysis, and prototype development to guide future app initiatives.',
-    image: circleKImg,
-    additionalImages: [
-      circleKImg,
-      krakaImg
-    ],
-    category: 'UX Design',
-    year: '2023',
-    client: 'Circle K E-mobility',
-    duration: '2 months',
-    role: 'UX Designer & Researcher',
-    content: [
-      {
-        type: 'header',
-        content: 'Project Description',
-        level: 2
-      },
-      {
-        type: 'text',
-        content: 'The summer of 2023, I had an internship within the eMobility team of Circle K Europe. The internship had a duration of 8 weeks and during these weeks I conducted an UX-project where I worked with exploring the possibilities of creating a holistic app-experience for the customers of Circle K.'
-      },
-      {
-        type: 'text',
-        content: 'Currently, Circle K Europe provides three mobile applications. One for private customers consuming fuel, carwash and convenience services (Circle K app), one for private customers driving electric vehicles to charge along the road (Circle K Charge) and one for company customers driving fossil fuel cars (Circle K Pro). The problem statement I worked with on the project was:'
-      },
-      {
-        type: 'text',
-        content: '<strong>Should Circle K Europe continue with the current multi-app strategy or work towards a consolidation of the different experiences?</strong>'
-      },
-      {
-        type: 'text',
-        content: 'The main part of the project was field research to understand the needs and interests of the different customers, but I also made a prototype of how a potential solution with a combined customer experience could look like.'
-      },
-      {
-        type: 'header',
-        content: 'Process',
-        level: 2
-      },
-      {
-        type: 'image',
-        content: '',
-        image: ck_plan,
-        alt: 'Overview of the process',
-        transparentBackground: true
-      },
-      {
-        type: 'text',
-        content: 'I started the projectby obtaining knowledge of the company and the purpose and functionality of the existing apps. Then I proceeded with getting to know the different customers of Circle K. My focus was to get an overview and understanding of all kind of drivers who use Circle K´s services, and find out which needs are similar and which are different across Circle K´s range of customer profiles. I sorted the most prominent insights from the interviews into six key findings.'
-      },
-      {
-        type: 'header',
-        content: 'Key Findings',
-        level: 2
-      },
-      {
-        type: 'header',
-        content: 'Key Findings from User Interviews',
-        level: 4
-      },
-      {
-        type: 'image',
-        content: '',
-        image: ck_keyfindings,
-        alt: 'Key findings from user interviews',
-        transparentBackground: true
-      },
-      {
-        type: 'header',
-        content: 'Other Important Findings',
-        level: 4
-      },
-      {
-        type: 'list',
-        content: `Several features are overlapping in the existing apps of Circle K today.
-      Customers on the road have many of the same needs and interests, unrelated to what kind of car they are driving.
-      Many Circle K customers drives different cars and are both private and company customers.`,
-        listType: 'numbered'
-      },
-      {
-        type: 'header',
-        content: 'Result: Circle K - On the Go',
-        level: 2
-      },
-      {
-        type: 'text',
-        content: 'Based on the findings from the research, I made a proposal of a prototype for a combined Circle K app. The app is a suggestion that includes both private and company customers, as well as customers who drive EV´s, fossile fuel cars or both. It will be an app that covers all of Circle K´s services on the road, making it intuitive for the user where to find the information they are looking for.'
-      },
-      {
-        type: 'text',
-        content: 'The research revealed that many Circle K customers had to download more than one of Circle K´s apps to get access to all the services that apply to them. With Circle K - On the Go, the user will get the ability to customize the app after their needs, as well as making it easy to switch between cars if they have more than one!'
-      },
-      {
-        type: 'image',
-        content: '',
-        image: ck_app,
-        alt: 'Image of the frontscreen of my suggestion for the Circle K app',
-        transparentBackground: true
-      },
-      {
-        type: 'header',
-        content: 'Selected Wireframes from Circle K - On the Go',
-        level: 4
-      },
-      {
-        type: 'image',
-        content: '',
-        image: ck_wireframes,
-        alt: 'Wireframes of Circle K - On the Go',
-        transparentBackground: true,
-        fullWidth: true
-      },
-      {
-        type: 'header',
-        content: 'Reflections',
-        level: 2
-      },
-      {
-        type: 'text',
-        content: 'During my summer internship with Circle K, I experienced significant growth as an independent designer and got better at initiating actions critical for the development of a project. This was my first time independently managing a project of this scale within such a large organization. Along the way, I had the opportunity to connect with many people who provided invaluable insights into navigating the complexities of a large company and balancing conflicting customer needs. I also participated in weekly design meetings with Circle K’s design team, where we shared updates, discussed challenges, and explored opportunities moving forward. These meetings provided me with valuable feedback on my project, as well as allowing me to participate in discussions with experienced designers across diverse design fields on their projects.'
-      },
-    ]  
-  
   },
   /*{
     id: 'studywell',
