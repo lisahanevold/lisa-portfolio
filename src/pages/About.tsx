@@ -60,12 +60,11 @@ const About = () => {
               
               <div className="space-y-4">
                 <p className="text-muted-foreground leading-relaxed">
-                  This spring I graduated with a masters degree in Industrial Design from NTNU in Trondheim, 
-                  with specialization in interaction and service design. Recently, I have begun a one year
-                  master program in Sustainable Development at Uppsala University in Sweden to gain a new 
-                  perspective on how to create sustainable solutions.
-                  My approach to design is deeply rooted in empathy and understanding. I believe 
-                  that great design starts with truly understanding the people we're designing for, 
+                  I have a masters degree in Industrial Design from NTNU in Trondheim, 
+                  with specialization in interaction and service design. I'm currently studying the one year
+                  masters program in Sustainable Development at Uppsala University, Sweden to gain new 
+                  perspectives on creating sustainable solutions.
+                  I believe that great design starts with truly understanding the people we're designing for, 
                   their needs, challenges, and aspirations. What motivates me the most about design is breaking 
                   down complex challenges into manageable parts and finding creative, user friendly and 
                   innovative solutions.
