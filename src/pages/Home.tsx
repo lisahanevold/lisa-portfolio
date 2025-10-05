@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 import ProjectCard from '@/components/ProjectCard';
 import Navigation from '@/components/Navigation';
 import { projects } from '@/data/projects';
-import heroImage from '@/assets/me.jpg';
+import heroImage from '@/assets/Portrett_uppsala.jpg';
 import Footer from '@/components/Footer';
 
 const Home = () => {

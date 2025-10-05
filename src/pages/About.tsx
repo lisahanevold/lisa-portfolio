@@ -14,7 +14,7 @@ const About = () => {
     'Prototyping',
     'Stakeholder Engagement',
     'Cross-cultural Design',
-    'Healthcare Design',
+    'Product Management',
   ];
 
   const experiences = [
