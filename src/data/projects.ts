@@ -279,7 +279,7 @@ export const projects: Project[] = [
       },
       {
         type:'text',
-        content: 'This project has probably been the most challenging, but also the most rewarding project I have worked on so far. We traveled to Nepal without any previous contact points in the country and encountered challenges we would not have faced working on a project in Norway. Throughout the project, we had to work around a language barrier, experienced how different social norms affects results and interactions, and had to be flexible and adapt quickly to unforeseen situations and opportunities that came our way. In Norway, we have an intuitive understanding of people and situations through understanding the language, social cues, and norms. In Nepal, a lot of this was foreign to us and we often felt unsure what was considered impolite to ask about or discuss.'
+        content: 'This project has probably been the most challenging, but also the most rewarding project I have worked on so far. We traveled to Nepal without any previous contact points in the country and encountered challenges we would not have faced working on a project in Norway. Throughout the project, we had to work around a language barrier, experienced how different social norms affect results and interactions, and had to be flexible and adapt quickly to unforeseen situations and opportunities that came our way. In Norway, we have an intuitive understanding of people and situations through understanding the language, social cues, and norms. In Nepal, a lot of this was foreign to us and we often felt unsure what was considered impolite to ask about or discuss.'
       },
       {
         type:'text',
@@ -287,7 +287,7 @@ export const projects: Project[] = [
       },
       {
         type:'text',
-        content: 'Additionally, we got to test out the use of different design methods on user from a different culture and without much previous knowledge of design. This made us reflect around when to use different the different tools and gave us the opportunity to get creative and test out new methods.'
+        content: 'Additionally, we got to test out the use of different design methods on users from a different culture and without much previous knowledge of design. This made us reflect around when to use different tools and gave us the opportunity to get creative and test out new methods.'
       },
       {
         type:'text',
