@@ -279,7 +279,7 @@ export const projects: Project[] = [
       },
       {
         type:'text',
-        content: 'This project has probably been the most challenging, but also the most rewarding project I have worked on so far. We traveled to Nepal without any previous contact points in the country and encountered challenges we would not have faced working on a project in Norway. Throughout the project, we had to work around a language barrier, experienced how different social norms affect results and interactions, and had to be flexible and adapt quickly to unforeseen situations and opportunities that came our way. In Norway, we have an intuitive understanding of people and situations through understanding the language, social cues, and norms. In Nepal, a lot of this was foreign to us and we often felt unsure what was considered impolite to ask about or discuss.'
+        content: 'This project has probably been the most challenging, but also the most rewarding project I have worked on so far. We travelled to Nepal without any previous contact points in the country and encountered challenges we would not have faced working on a project in Norway. Throughout the project, we had to work around a language barrier, experienced how different social norms affect results and interactions, and had to be flexible and adapt quickly to unforeseen situations and opportunities that came our way. In Norway, we have an intuitive understanding of people and situations through understanding the language, social cues, and norms. In Nepal, a lot of this was foreign to us and we often felt unsure what was considered impolite to ask about or discuss.'
       },
       {
         type:'text',
@@ -291,7 +291,7 @@ export const projects: Project[] = [
       },
       {
         type:'text',
-        content: 'This project has given me the opportunity to grow as a designer and broadened my perspective. I have learnt about ethnographic research, gotten more confident as a service and strategic designer and learnt from collaborating with talented people from two internationally recognized organizations. I am grateful for the opportuntity to have worked with Ariadne Labs and Leardal Global Health on this project, and look forward to see the results of their work in Nepal.'
+        content: 'This project has given me the opportunity to grow as a designer and broadened my perspective. I have learnt about ethnographic research, gotten more confident as a service and strategic designer, and learnt from collaborating with talented people from two internationally recognized organizations. I am grateful for the opportunity to have worked with Ariadne Labs and Leardal Global Health on this project, and look forward to seeing the results of their work in Nepal.'
       },
       {
         type: 'image',
