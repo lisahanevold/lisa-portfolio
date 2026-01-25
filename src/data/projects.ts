@@ -78,8 +78,8 @@ export const projects: Project[] = [
   {
     id: 'teambirth-nepal',
     title: 'Adapting TeamBirth to Urban Nepal',
-    description: 'Master project to explore if and how a western-made product can be adapted and implemented in healthcare facilities in urban Nepal to facilitate for respectful maternity care',
-    longDescription: 'This master thesis project explored the complex challenge of adapting western healthcare solutions for different cultural contexts. Working with TeamBirth, a communication and empowerment tool for maternity care, I investigated how to make it culturally appropriate and effective in urban Nepali healthcare settings.',
+    description: 'Master project to explore if and how a Western-made product can be adapted and implemented in healthcare facilities in urban Nepal to facilitate for respectful maternity care',
+    longDescription: 'This master´s thesis project explored the complex challenge of adapting Western healthcare solutions for different cultural contexts. Working with TeamBirth, a communication and empowerment tool for maternity care, I investigated how to make it culturally appropriate and effective in urban Nepali healthcare settings.',
     image: teambirthImg,
     category: 'Service Design',
     year: '2025',
@@ -139,7 +139,7 @@ export const projects: Project[] = [
       },
       {
         type: 'text',
-        content: 'Before and during our 4 week field trip to Nepal we conducted primary research including interviews, focus groups, workshops and observation studies.'
+        content: 'Before and during our 4-week field trip to Nepal, we conducted primary research including interviews, focus groups, workshops, and observation studies.'
       },
       {
         type: 'text',
@@ -147,7 +147,7 @@ export const projects: Project[] = [
       },
       {
         type: 'text',
-        content: 'We spoke with a range of relevant users and stakeholders including psychiatrists, doctors, midwives, Nepali mothers, husbands and women´s rights activists.'
+        content: 'We spoke with a range of relevant users and stakeholders, including psychiatrists, doctors, midwives, Nepali mothers, husbands, and women´s rights activists.'
       },
       {
         type: 'image',
@@ -165,7 +165,7 @@ export const projects: Project[] = [
       },
       {
         type: 'text',
-        content: 'Some of the key findings from the primary research were barriers for implementing TeamBirth in Nepal. Some of the identified barriers were limited recognition of respectful care practices, a lack of autonomy and decision-making power among women, and strong hierarchical social structures.'
+        content: 'Some of the key findings from the primary research were barriers to implementing TeamBirth in Nepal. Some of the identified barriers were limited recognition of respectful care practices, a lack of autonomy and decision-making power among women, and strong hierarchical social structures.'
       },
       {
         type: 'header',
@@ -183,7 +183,7 @@ export const projects: Project[] = [
       },
       {
         type:'text',
-        content: 'Midwife-led units are led by <strong>midwives</strong>. When the woman giving birthis admitted to this unit, she stays in one room for the entire delivery.'
+        content: 'Midwife-led units are led by <strong>midwives</strong>. When the woman giving birth is admitted to this unit, she stays in one room for the entire delivery.'
       },
       {
         type: 'image',
@@ -216,7 +216,7 @@ export const projects: Project[] = [
       },
       {
         type:'text',
-        content: 'We gathered several perspectives during our field research. Four of these were considered the target users of TeamBirth in the context of Nepal. The target users are new mothers, her husband, the doctor and the midwife a government hospital. Each of these have distinct needs, challenges, and motivations that must be taken into consideration for TeamBirth to work as intended.'
+        content: 'We gathered several perspectives during our field research. Four of these were considered the target users of TeamBirth in the context of Nepal. The target users are new mothers, her husband, the doctor, and the midwife at a government hospital. Each of these has distinct needs, challenges, and motivations that must be taken into consideration for TeamBirth to work as intended.'
       },
       {
         type: 'image',
@@ -232,7 +232,7 @@ export const projects: Project[] = [
       },
       {
         type:'text',
-        content: 'To evaluate the feasibility and impact of implementing TeamBirth in Nepali health facilities we performed an analysis of the target users to understand their needs and challenges, a sustainability analysis to identify barriers for implementing TeamBirth in Nepal, and a strategic analysis to translate these barriers into actionable opportunities to guide the project’s final direction. The results of these analyses are roughly summarized in the strengths/opportunities and weaknesses/threats (SWOT) figure below.'
+        content: 'To evaluate the feasibility and impact of implementing TeamBirth in Nepali health facilities, we performed an analysis of the target users to understand their needs and challenges, a sustainability analysis to identify barriers for implementing TeamBirth in Nepal, and a strategic analysis to translate these barriers into actionable opportunities to guide the project’s final direction. The results of these analyses are roughly summarized in the strengths/opportunities and weaknesses/threats (SWOT) figure below.'
       },
       {
         type: 'image',
@@ -248,7 +248,7 @@ export const projects: Project[] = [
       },
       {
         type:'text',
-        content: 'There is a need for an intervention to facilitate respectful care in Nepal, and TeamBirth has a potential to meet this need. However, significant barriers may hinder the acceptance and feasibility of TeamBirth.'
+        content: 'There is a need for an intervention to facilitate respectful care in Nepal, and TeamBirth has the potential to meet this need. However, significant barriers may hinder the acceptance and feasibility of TeamBirth.'
       },
       {
         type: 'header',
@@ -257,7 +257,7 @@ export const projects: Project[] = [
       },
       {
         type:'text',
-        content: 'Our final delivery is a strategic plan with a short-, mid-, and long-term perspective that focuses on gradual change and iterative development to provide recommendations for the future work of Ariadne Labs. The plan aims to align with local constraints, future trends and Ariadne Labs´ vision for upcoming work. An overview over the strategic plan can be seen in the matrix below.'
+        content: 'Our final delivery is a strategic plan with a short-, mid-, and long-term perspective that focuses on gradual change and iterative development to provide recommendations for the future work of Ariadne Labs. The plan aims to align with local constraints, future trends, and Ariadne Labs´ vision for upcoming work. An overview of the strategic plan can be seen in the matrix below.'
       },
     
       {
@@ -270,7 +270,7 @@ export const projects: Project[] = [
       },
       {
         type:'text',
-        content: 'We developed suggestions for specific design choices for all terms in the strategic plan, although these will not be presented in the portfolio. Please reach out if you are interested in the full report or more details. Our insights and the strategic plan have been presented to Ariadne Labs, and they will continue working on the project from our findings.'
+        content: 'We developed suggestions for specific design choices for all terms in the strategic plan, although these will not be presented in the portfolio. Please reach out if you are interested in the full report or more details. Our insights and the strategic plan have been presented to Ariadne Labs, and they will continue working on the project based on our findings.'
       },
       {
         type: 'header',
@@ -279,7 +279,7 @@ export const projects: Project[] = [
       },
       {
         type:'text',
-        content: 'This project has probably been the most challenging, but also the most rewarding project I have worked on so far. We travelled to Nepal without any previous contact points in the country and encountered challenges we would not have faced working on a project in Norway. Throughout the project, we had to work around a language barrier, experienced how different social norms affect results and interactions, and had to be flexible and adapt quickly to unforeseen situations and opportunities that came our way. In Norway, we have an intuitive understanding of people and situations through understanding the language, social cues, and norms. In Nepal, a lot of this was foreign to us and we often felt unsure what was considered impolite to ask about or discuss.'
+        content: 'This project has probably been the most challenging, but also the most rewarding project I have worked on so far. We travelled to Nepal without any previous contact points in the country and encountered challenges we would not have faced working on a project in Norway. Throughout the project, we had to work around a language barrier, experienced how different social norms affect results and interactions, and had to be flexible and adapt quickly to unforeseen situations and opportunities that came our way. In Norway, we have an intuitive understanding of people and situations through understanding the language, social cues, and norms. In Nepal, a lot of this was foreign to us, and we often felt unsure what was considered impolite to ask about or discuss.'
       },
       {
         type:'text',
@@ -287,11 +287,11 @@ export const projects: Project[] = [
       },
       {
         type:'text',
-        content: 'Additionally, we got to test out the use of different design methods on users from a different culture and without much previous knowledge of design. This made us reflect around when to use different tools and gave us the opportunity to get creative and test out new methods.'
+        content: 'Additionally, we got to test out the use of different design methods on users from a different culture and without much previous knowledge of design. This made us reflect on when to use different tools and gave us the opportunity to get creative and test out new methods.'
       },
       {
         type:'text',
-        content: 'This project has given me the opportunity to grow as a designer and broadened my perspective. I have learnt about ethnographic research, gotten more confident as a service and strategic designer, and learnt from collaborating with talented people from two internationally recognized organizations. I am grateful for the opportunity to have worked with Ariadne Labs and Leardal Global Health on this project, and look forward to seeing the results of their work in Nepal.'
+        content: 'This project has allowed me to grow as a designer and broadened my perspective. I have learnt about ethnographic research, gotten more confident as a service and strategic designer, and learnt from collaborating with talented people from two internationally recognized organizations. I am grateful for the opportunity to have worked with Ariadne Labs and Leardal Global Health on this project, and look forward to seeing the results of their work in Nepal.'
       },
       {
         type: 'image',
